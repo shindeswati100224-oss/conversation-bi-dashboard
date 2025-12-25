@@ -5,9 +5,9 @@ import plotly.express as px
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# -------------------------------------------------
+# =================================================
 # PAGE CONFIG
-# -------------------------------------------------
+# =================================================
 st.set_page_config(
     page_title="E-commerce Customer Support Insights",
     layout="wide"
@@ -16,9 +16,9 @@ st.set_page_config(
 st.title("📊 E-commerce Customer Support Insights")
 st.write("Upload conversation data to analyze customer support performance")
 
-# -------------------------------------------------
-# FILE UPLOAD (Conversation BI Data)
-# -------------------------------------------------
+# =================================================
+# FILE UPLOAD
+# =================================================
 uploaded_file = st.file_uploader(
     "Upload conversation_bi_ai_output.csv",
     type=["csv"]
@@ -28,10 +28,30 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
     df.columns = df.columns.str.lower()
 
-    # ---------------- KPIs ----------------
+    # =================================================
+    # AUTO-DETECT COLUMNS (NO HARD CODING)
+    # =================================================
+    sentiment_col = None
+    category_col = None
+
+    for col in df.columns:
+        if "sentiment" in col:
+            sentiment_col = col
+        if "category" in col or "issue" in col:
+            category_col = col
+
+    # =================================================
+    # KPIs
+    # =================================================
     total_conversations = len(df)
-    negative_count = len(df[df["sentiment"] == "negative"])
-    positive_count = len(df[df["sentiment"] == "positive"])
+
+    if sentiment_col:
+        negative_count = len(df[df[sentiment_col].astype(str).str.lower() == "negative"])
+        positive_count = len(df[df[sentiment_col].astype(str).str.lower() == "positive"])
+    else:
+        negative_count = 0
+        positive_count = 0
+        st.warning("⚠️ Sentiment column not found in CSV")
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Conversations", total_conversations)
@@ -40,47 +60,56 @@ if uploaded_file:
 
     st.markdown("---")
 
-    # ---------------- FILTERS ----------------
+    # =================================================
+    # FILTERS
+    # =================================================
     st.subheader("🔍 Filters")
 
-    category_filter = st.selectbox(
-        "Select Issue Category",
-        ["All"] + sorted(df["category"].dropna().unique())
-    )
+    if category_col:
+        category_filter = st.selectbox(
+            "Select Issue Category",
+            ["All"] + sorted(df[category_col].dropna().unique())
+        )
 
-    if category_filter != "All":
-        df = df[df["category"] == category_filter]
+        if category_filter != "All":
+            df = df[df[category_col] == category_filter]
+    else:
+        st.info("ℹ️ Category column not found. Filters disabled.")
 
-    # ---------------- CHARTS ----------------
-    st.subheader("📌 Issue Category Distribution")
-    st.plotly_chart(
-        px.bar(df, x="category", color="category"),
-        use_container_width=True
-    )
+    # =================================================
+    # CHARTS
+    # =================================================
+    if category_col:
+        st.subheader("📌 Issue Category Distribution")
+        st.plotly_chart(
+            px.bar(df, x=category_col, color=category_col),
+            use_container_width=True
+        )
 
-    st.subheader("😊 Sentiment Distribution")
-    st.plotly_chart(
-        px.pie(df, names="sentiment"),
-        use_container_width=True
-    )
+    if sentiment_col:
+        st.subheader("😊 Sentiment Distribution")
+        st.plotly_chart(
+            px.pie(df, names=sentiment_col),
+            use_container_width=True
+        )
 
-    with st.expander("📄 View Raw Conversation Data"):
+    with st.expander("📄 View Raw Data"):
         st.dataframe(df)
 
+else:
+    st.info("⬆️ Upload CSV file to view dashboard insights")
+
 # =================================================
-# FLIPKART FAQ CHATBOT (NO CSV, NO UPLOAD)
+# FLIPKART FAQ CHATBOT (NO CSV, EMBEDDED DATA)
 # =================================================
 st.markdown("---")
 st.header("🤖 Flipkart FAQ Chatbot")
 
 st.write(
     "Ask questions related to **delivery, refund, return, payment** "
-    "based on Flipkart public FAQ information."
+    "based on public Flipkart FAQ information."
 )
 
-# -------------------------------------------------
-# EMBEDDED FAQ DATA (FIXED STRINGS)
-# -------------------------------------------------
 FLIPKART_FAQ_TEXT = [
     "You can return most items within 7 days of delivery.",
     "Refunds are initiated once the returned item is received.",
@@ -116,9 +145,9 @@ def get_faq_answer(question):
 
     return faq_df.iloc[best_index]["text"]
 
-# -------------------------------------------------
+# =================================================
 # CHAT UI
-# -------------------------------------------------
+# =================================================
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
