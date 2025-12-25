@@ -1,0 +1,501 @@
+source,clean_text,issue_type,sentiment
+Flipkart Public Pages,"online shopping india  buy mobiles, electronics, appliances, clothing and more online at flipkart",Other,POSITIVE
+Flipkart Public Pages,com explore plus help center login become a seller more cart type of issue help with your issues help with your order help with other issues help topics help centre login to get help with your recent orders and issues log in want to reach us old style,Other,NEGATIVE
+Flipkart Public Pages,"here is our postal address about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,return policy  flipkart,Refund,NEGATIVE
+Flipkart Public Pages,com explore plus login become a seller more cart order cancellation and return policy cancellation policy the customer can choose to cancel an order any time before its dispatched,Refund,NEGATIVE
+Flipkart Public Pages,the order cannot be canceled once its out for delivery,Delivery,POSITIVE
+Flipkart Public Pages,"however, the customer may choose to reject it at the doorstep",Other,NEGATIVE
+Flipkart Public Pages,the time window for cancellation varies based on different categories and the order cannot be canceled once the specified time has passed,Other,NEGATIVE
+Flipkart Public Pages,"in some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged",Other,POSITIVE
+Flipkart Public Pages,the details about the time window mentioned on the product page or order confirmation page will be considered final,Other,NEGATIVE
+Flipkart Public Pages,"in case of any cancellation from the seller due to unforeseen circumstances, a full refund will be initiated for prepaid orders",Refund,NEGATIVE
+Flipkart Public Pages,flipkart reserves the right to accept the cancellation of any order,Other,NEGATIVE
+Flipkart Public Pages,flipkart also reserves the right to waive off or modify the time window or cancellation fee from time to time,Other,NEGATIVE
+Flipkart Public Pages,"cancellation policy  hyperlocal the orders placed by you on the platform are noncancellable and nonrefundable via self serve under minutes delivery option owing to quick delivery times, except if cancellationrefund is requested via cx agent under the following circumstances the order could not be delivered within the estimated time that was displayed while placing the order the order has not been picked by the delivery partner the seller has not accepted or has canceled the order due to reasons not attributable to you",Delivery,NEGATIVE
+Flipkart Public Pages,"easy doorstep cancellation any other reason that the platform may update from time to time we reserve the right to cancel your order, in whole or in part, for reasons including product unavailability, unforeseen circumstances beyond our control force majeure, suspected fraudulent activity, violation of our terms of use, or logistical constraints",Other,NEGATIVE
+Flipkart Public Pages,"in all instances of cancellation by us, you will not be charged for the canceled order",Other,NEGATIVE
+Flipkart Public Pages,any payments you have already made will be promptly refunded within 57 business days for any cancellations,Refund,NEGATIVE
+Flipkart Public Pages,you can track the status of your refund on the order details pagesection,Refund,NEGATIVE
+Flipkart Public Pages,"our return, cancellation, and refund policies may be subject to additional reasonable terms and conditions",Refund,NEGATIVE
+Flipkart Public Pages,these will be communicated to you periodically through the platforms push notifications or other communication methods as outlined within these terms or as determined by the company,Other,NEGATIVE
+Flipkart Public Pages,"returns policy returns is a scheme provided by respective sellers directly under this policy in terms of which the option of exchange, replacement and or refund is offered by the respective sellers to you",Refund,NEGATIVE
+Flipkart Public Pages,all products listed under a particular category may not have the same returns policy,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the returnsreplacement policy provided on the product page shall prevail over the general returns policy",Refund,POSITIVE
+Flipkart Public Pages,do refer the respective items applicable returnreplacement policy on the product page for any exceptions to this returns policy and the table below the return policy is divided into three parts do read all sections carefully to understand the conditions and cases under which returns will be accepted,Refund,NEGATIVE
+Flipkart Public Pages,"part 1  category, return window and actions possible category returns window, actions possible and conditions if any furniture home pet supplies  rest of home",Refund,NEGATIVE
+Flipkart Public Pages,"except home dcor, furnishing, home improvement tools, household items 10 days refund or replacement for products requiring installation, returns shall be eligible only when such products are installed by the brand39s authorized personnel",Refund,NEGATIVE
+Flipkart Public Pages,"in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a refundreplacement of the same product will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 10 days of delivery or installation wherever applicable, you will be directed to a brand service centre to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided lifestyle watch, tshirt, footwear, sari, short, dress, kids capri, shorts  tops, mens ethnic wear, shirt, formals, jeans, clothing accessory, womens ethnic wear, fabric, blouse, jean, skirt, trousers, bra, bags, raincoat, sunglass, belt, frame, backpack, suitcase, luggage, etc",Other,NEGATIVE
+Flipkart Public Pages,"lifestyle jewellery, footwear accessories, travel accessories, watch accessories, etc",Other,POSITIVE
+Flipkart Public Pages,"lifestyle winterwearsweatshirt, jacket, sweater, cardigan, kidsthermal, pullover, windcheater, tracksuit, thermal,shawl, tracktop, glove, muffler, scarf, blazer, uniformsweatshirt, uniformblazer, kidsmuffler, kidsmitten, shrug, poncho,uniformsweater, cap, waistcoat, legwarmer, legging,elderhalloweencostume 10 days refund, replacement or exchange medicine allopathy  homeopathy 2 days refund home home improvement tools, household items, home dcor, furnishing 7 days refund or replacement books all books sports equipments racquet, ball, support, gloves, bags etc",Refund,NEGATIVE
+Flipkart Public Pages,"exercise  fitness equipments home gym combos, dumbbell etc",Other,NEGATIVE
+Flipkart Public Pages,"auto accessories  car and bike accessories helmets, car kit, media players etc",Other,NEGATIVE
+Flipkart Public Pages,7 days replacement only free replacement will be provided within 7 days if the product is delivered in defectivedamaged condition or different from the ordered item,Other,NEGATIVE
+Flipkart Public Pages,"please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"toys remote controlled toys, learning toys, stuffed toys etc",Other,NEGATIVE
+Flipkart Public Pages,"stationary pens, diary notebooks, calculators etc",Other,NEGATIVE
+Flipkart Public Pages,"musical instruments microphones  accessories, guitars, violins etc",Other,NEGATIVE
+Flipkart Public Pages,7 days replacement only free replacement will be provided within 7 days if the product is delivered in defectivedamaged condition or different from the ordered item,Other,NEGATIVE
+Flipkart Public Pages,"please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"nonreturnable  all wind instruments harmonicas, flutes etc",Refund,NEGATIVE
+Flipkart Public Pages,this item is nonreturnable due to hygiene and personal wellness,Refund,POSITIVE
+Flipkart Public Pages,"in case these products are delivered in damageddefective condition or different from the ordered item, we will provide a free replacement",Other,NEGATIVE
+Flipkart Public Pages,"all mobiles except apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones, electronics  except apple  beats, google, realme, samsung, jbl infinity, epson, hp, dell, canon, mi, dizo products tablets, laptops, smart watches all small home appliances except chimney, water purifier, fan, geyser furniture  hammock swing  stool 7 days replacement only in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to a brand service center to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided",Other,NEGATIVE
+Flipkart Public Pages,"mobile  apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones electronics  acer, amkette, applebeats, bose, brother, canon, compaq, creative, dell, dizo, epson, google, gopro, govo, hp, infinity, jbl, lenovo, lg, lifelong, mi, motorola, nothing, oneplus, oppo, panasonic, philips, realme, redmi, samsung, sansui, seagate, sonos, sony, thomson, total, xiaomi products tablets, laptops, smart watches, headphones, speakers large vu, lg, godrej, haier, ifb, hindware , glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl, toshiba, hitachi, rockwell, kent 7 days service center replacementrepair only brand assistance for device related issues is subject to brand warranty guidelines and service policies",Other,NEGATIVE
+Flipkart Public Pages,"please reach out to the nearest brand authorized service centre for more detail please note that flipkart is an online marketplace and the final decision on replacement of defective device rests with the sellerbrand for samsung, in case of doa approved by brand, share the certificate of approval to the flipkart customer support team to process your complaint authorized service partner locator for brands click here for any other issues with the product, you may contact flipkart  flipkarts 247 customer care furniture, large appliances  except vu, lg, godrej,haier, ifb, hindware , glen, faber, agaro, voltas, bosch, vu, lg, godrej, haier, ifb, hindware, glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl,toshiba, hitachi, rockwell, kent  rest of small home appliances  chimney, water purifier, fan, geyser only 10 days replacement only for products requiring installation, returns shall be eligible only when such products are installed by the brands authorized personnel",Refund,NEGATIVE
+Flipkart Public Pages,"in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 10 days of delivery or installation wherever applicable, you will be directed to a brand service centre to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided",Other,NEGATIVE
+Flipkart Public Pages,"grocery excluding minutes  dairy, bakery, fruits and vegetables 2 days refund only grocery excluding minutes remaining items under grocery like pulses, atta, edible and more 7 days refund only no questions asked 10 days refund or replacement this policy enables easy product return requests for customers through the platform, subject to product validations at the time of pickup and fraud prevention mechanisms",Refund,NEGATIVE
+Flipkart Public Pages,this policy shall be applicable only if the product was bought when this policy was applicable to the product,Other,NEGATIVE
+Flipkart Public Pages,"if not, the policy provided here shall apply to the order",Other,NEGATIVE
+Flipkart Public Pages,"it is clarified that a customer may only be able to seek a onetime replacement under this policy, subject to the other terms provided herein",Other,NEGATIVE
+Flipkart Public Pages,exceptions to this policy following claims will be covered under the policy provided here and through corresponding validation processes a,Other,NEGATIVE
+Flipkart Public Pages,product undelivered b,Other,NEGATIVE
+Flipkart Public Pages,productaccessories missing c,Other,NEGATIVE
+Flipkart Public Pages,wrong productaccessories delivered no returns categories some products in the above categories are not returnable due to their nature or other reasons,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the policy on the product page shall prevail",Other,POSITIVE
+Flipkart Public Pages,you can view the complete list of nonreturnable products here,Refund,POSITIVE
+Flipkart Public Pages,"refurbished 7 days replacement only to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to the warranty partner for resolving any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"part 2  returns pickup and processing in case of returns where you would like items to be picked up from a different address, the address can only be changed if pickup service is available at the new address during pickup, your product will be checked for the following conditions category conditions correct product imei name image brand serial number article number bar code should match and mrp tag should be undetached and clearly visible",Refund,NEGATIVE
+Flipkart Public Pages,"complete product all inthebox accessories like remote control, starter kits, instruction manuals, chargers, headphones, etc",Other,POSITIVE
+Flipkart Public Pages,", freebies and combos if any should be present",Other,NEGATIVE
+Flipkart Public Pages,"unused product the product should be unused, unwashed, unsoiled, without any stains and with nontampered quality check sealsreturn tagswarranty seals wherever applicable",Refund,NEGATIVE
+Flipkart Public Pages,"before returning a mobile laptop tablet, the device should be formatted and screen lock pin, pattern or fingerprint must be disabled",Refund,NEGATIVE
+Flipkart Public Pages,icloud lock must be disabled for apple devices,Other,NEGATIVE
+Flipkart Public Pages,"undamaged product the product including sim trays charging port headphone port, backpanel etc",Other,NEGATIVE
+Flipkart Public Pages,"should be undamaged and without any scratches, dents, tears or holes",Other,POSITIVE
+Flipkart Public Pages,undamaged packaging the products original packaging box should be undamaged,Other,NEGATIVE
+Flipkart Public Pages,the field executive will refuse to accept the return if any of the above conditions are not met,Refund,NEGATIVE
+Flipkart Public Pages,"for any products for which a refund is to be given, the refund will be processed once the returned product has been received by the seller",Refund,NEGATIVE
+Flipkart Public Pages,"part 3  general rules for a successful return in certain cases where the seller is unable to process a replacement for any reason whatsoever, a refund will be given",Refund,NEGATIVE
+Flipkart Public Pages,"in cases where a product accessory is found missingdamageddefective, the seller may either process a replacement of the particular accessory or issue an egv for an amount equivalent to the price of the accessory, at the sellers discretion",Other,NEGATIVE
+Flipkart Public Pages,"during open box deliveries, while accepting your order, if you received a different or a damaged product, you will be given a refund on the spot refunds for cashondelivery orders",Delivery,NEGATIVE
+Flipkart Public Pages,"once you have accepted an open box delivery, no return request will be processed, except for manufacturing defects",Delivery,NEGATIVE
+Flipkart Public Pages,"in such cases, these categoryspecific replacementreturn general conditions will be applicable",Refund,POSITIVE
+Flipkart Public Pages,"click here to know more about open box delivery for products where installation is provided by flipkarts service partners, do not open the product packaging by yourself",Delivery,NEGATIVE
+Flipkart Public Pages,flipkart authorised personnel shall help in unboxing and installation of the product,Other,POSITIVE
+Flipkart Public Pages,"for furniture, any productrelated issues will be checked by authorised service personnel free of cost and attempted to be resolved by replacing the faulty defective part of the product",Other,NEGATIVE
+Flipkart Public Pages,full replacement will be provided only in cases where the service personnel opines that replacing the faultydefective part will not resolve the issue,Other,NEGATIVE
+Flipkart Public Pages,"flipkart holds the right to restrict the number of returns created per order unit, post the evaluation of the productorder defect is undertaken by flipkarts authorized representative",Refund,NEGATIVE
+Flipkart Public Pages,return policy  hyperlocal return is a scheme provided by respective sellers directly under this policy in terms of which the option of refund is offered by the respective sellers to you,Refund,NEGATIVE
+Flipkart Public Pages,all products listed under a particular category may not have the same returns policy,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the return policy provided on the product page shall prevail over the general returns policy",Refund,POSITIVE
+Flipkart Public Pages,do refer to the respective items applicable return policy on the product page for any exceptions to this returns policy and the table below the return policy is divided into three parts do read all sections carefully to understand the conditions and cases under which returns will be accepted,Refund,NEGATIVE
+Flipkart Public Pages,"category, return window, and possible actions category returns window, actions possible and conditions if any freshfruit,vegetable,milk nonprescription medicines paracetetamol, diegene, limcee etc",Refund,NEGATIVE
+Flipkart Public Pages,"1 day return refund fresh  egg, fishseafood and meat 2 days return refund fresh bread, cheese, butter etc",Refund,NEGATIVE
+Flipkart Public Pages,"grocery  food  nutrition pulses, flour, cooking ingredients, namkeen, etc",Other,POSITIVE
+Flipkart Public Pages,"grocery  personal care  shampoo, lotions, soap, face wash, etc",Other,NEGATIVE
+Flipkart Public Pages,"grocery  other detergent, washing liquid, etc",Other,NEGATIVE
+Flipkart Public Pages,"3 days return refund books all books sports equipment racquet, ball, support,etc toys remote controlled toys, learning toys, stuffed toys etc",Refund,NEGATIVE
+Flipkart Public Pages,"stationary pens, diary notebooks, calculators etc",Other,NEGATIVE
+Flipkart Public Pages,"home utensils cooker, pan, etc",Other,POSITIVE
+Flipkart Public Pages,"7 days return please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"all mobiles except apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones, electronics  except apple  beats, google, realme, samsung, jbl  infinity, epson, hp, dell, canon, mi, dizo products tablets, laptops, smart watches all small home appliances except chimney, water purifier, fan, geyser 7 days return refund only in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to a brand service center to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"mobile  apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones electronics  acer, amkette, applebeats, bose, brother, canon, compaq, creative, dell, dizo, epson, google, gopro, govo, hp, infinity, jbl, lenovo, lg, lifelong, mi, motorola, nothing, oneplus, oppo, panasonic, philips, realme, redmi, samsung, sansui, seagate, sonos, sony, thomson, total, xiaomi products tablets, laptops, smart watches, headphones, speakers large vu, lg, godrej, haier, ifb, hindware , glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl, toshiba, hitachi, rockwell, kent 7 days service center replacementrepair only brand assistance for device related issues is subject to brand warranty guidelines and service policies",Other,NEGATIVE
+Flipkart Public Pages,"please reach out to the nearest brand authorized service centre for more detail please note that flipkart is an online marketplace and the final decision on returnreplacement of defective device rests with the sellerbrand for samsung, in case of doa approved by brand, share the certificate of approval to the flipkart customer support team to process your complaint authorized service partner locator for brands click here for any other issues with the product, you may contact flipkart  flipkarts 247 customer care home  bedsheet, pet food, furnishings, home decor, etc 7 days return refund for products requiring installation, returns shall be eligible only when such products are installed by the brand authorized personnel lifestyle watch, tshirt, footwear, sari, short, dress,etc",Refund,NEGATIVE
+Flipkart Public Pages,"lifestyle jewellery, footwear accessories, travel accessories, watch accessories, etc",Other,POSITIVE
+Flipkart Public Pages,"lifestyle winterwearsweatshirt, jacket, sweater,etc",Other,POSITIVE
+Flipkart Public Pages,"10 days return refund no return categories  diaper,bottle nipple,female urination device,women intimate care,teether soother,nipple puller,sanitary pad pantyliner ,condom,toothbrush,tampon,dental floss stick,toilet brush,cleaning glove ,boxer,trunk,sock,panty some products in the above categories are not returnable due to their nature or other reasons",Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the policy on the product page shall prevail",Other,POSITIVE
+Flipkart Public Pages,"returns for damaged and wrong delivery of products may be accepted on case based within 5 days of delivery prescription medicines  medication such as antibiotics, pain killers etc 3 days return refund returns for damaged, wrong and expired products may be accepted",Delivery,NEGATIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,payments store online  buy payments online at best price in india  flipkart,Payment,POSITIVE
+Flipkart Public Pages,com explore plus login become a seller more cart payments how do i pay for a flipkart purchase,Payment,NEGATIVE
+Flipkart Public Pages,flipkart offers you multiple payment methods,Payment,POSITIVE
+Flipkart Public Pages,"whatever your online mode of payment, you can rest assured that flipkarts trusted payment gateway partners use secure encryption technology to keep your transaction details confidential at all times",Payment,NEGATIVE
+Flipkart Public Pages,"you may use internet banking, gift card, cash on delivery and wallet to make your purchase",Delivery,NEGATIVE
+Flipkart Public Pages,"flipkart also accepts payments made using visa, mastercard, maestro and american express creditdebit cards in india and 21 other countries",Payment,POSITIVE
+Flipkart Public Pages,are there any hidden charges octroi or sales tax when i make a purchase on flipkart,Other,NEGATIVE
+Flipkart Public Pages,there are no hidden charges when you make a purchase on flipkart,Other,NEGATIVE
+Flipkart Public Pages,the prices listed for all the items are final and allinclusive,Other,POSITIVE
+Flipkart Public Pages,the price you see on the product page is exactly what you pay,Other,POSITIVE
+Flipkart Public Pages,delivery charges may be extra depending on the seller policy,Delivery,NEGATIVE
+Flipkart Public Pages,please check individual seller for the same,Other,NEGATIVE
+Flipkart Public Pages,"in case of seller ws retail, the 50 delivery charge is waived off on orders worth 500 and over",Delivery,NEGATIVE
+Flipkart Public Pages,what is cash on delivery,Delivery,NEGATIVE
+Flipkart Public Pages,if you are not comfortable making an online payment on flipkart,Payment,NEGATIVE
+Flipkart Public Pages,"com, you can opt for the cash on delivery cod payment method instead",Delivery,NEGATIVE
+Flipkart Public Pages,"with cod you can pay in cash at the time of actual delivery of the product at your doorstep, without requiring you to make any advance payment online",Delivery,NEGATIVE
+Flipkart Public Pages,"the maximum order value for a cash on delivery cod payment is 50,000",Delivery,NEGATIVE
+Flipkart Public Pages,it is strictly a cashonly payment method,Payment,NEGATIVE
+Flipkart Public Pages,gift cards or store credit cannot be used for cod orders,Other,NEGATIVE
+Flipkart Public Pages,foreign currency cannot be used to make a cod payment,Payment,NEGATIVE
+Flipkart Public Pages,only indian rupees accepted,Other,NEGATIVE
+Flipkart Public Pages,how do i pay using a creditdebit card,Other,NEGATIVE
+Flipkart Public Pages,we accept payments made by creditdebit cards issued in india and 21 other countries,Payment,POSITIVE
+Flipkart Public Pages,"credit cards we accept payments made using visa, mastercard and american express credit cards",Payment,NEGATIVE
+Flipkart Public Pages,"to pay using your credit card at checkout, you will need your card number, expiry date, threedigit cvv number found on the backside of your card",Other,NEGATIVE
+Flipkart Public Pages,"after entering these details, you will be redirected to the banks page for entering the online 3d secure password",Other,NEGATIVE
+Flipkart Public Pages,"debit cards we accept payments made using visa, mastercard and maestro debit cards",Payment,NEGATIVE
+Flipkart Public Pages,"to pay using your debit card at checkout, you will need your card number, expiry date optional for maestro cards, threedigit cvv number optional for maestro cards",Other,NEGATIVE
+Flipkart Public Pages,you will then be redirected to your banks secure page for entering your online password issued by your bank to complete the payment,Payment,NEGATIVE
+Flipkart Public Pages,"internationally issued creditdebit cards cannot be used for flyte, wallet and egv paymentstopups",Payment,NEGATIVE
+Flipkart Public Pages,is it safe to use my creditdebit card on flipkart,Other,NEGATIVE
+Flipkart Public Pages,your online transaction on flipkart is secure with the highest levels of transaction security currently available on the internet,Other,POSITIVE
+Flipkart Public Pages,flipkart uses 256bit encryption technology to protect your card information while securely transmitting it to the respective banks for payment processing,Payment,NEGATIVE
+Flipkart Public Pages,all credit card and debit card payments on flipkart are processed through secure and trusted payment gateways managed by leading banks,Payment,POSITIVE
+Flipkart Public Pages,"banks now use the 3d secure password service for online transactions, providing an additional layer of security through identity verification",Other,NEGATIVE
+Flipkart Public Pages,what steps does flipkart take to prevent card fraud,Other,POSITIVE
+Flipkart Public Pages,flipkart realizes the importance of a strong fraud detection and resolution capability,Other,POSITIVE
+Flipkart Public Pages,we and our online payments partners monitor transactions continuously for suspicious activity and flag potentially fraudulent transactions for manual verification by our team,Payment,NEGATIVE
+Flipkart Public Pages,"in the rarest of rare cases, when our team is unable to rule out the possibility of fraud categorically, the transaction is kept on hold, and the customer is requested to provide identity documents",Other,NEGATIVE
+Flipkart Public Pages,the id documents help us ensure that the purchases were indeed made by a genuine card holder,Other,NEGATIVE
+Flipkart Public Pages,we apologise for any inconvenience that may be caused to customers and request them to bear with us in the larger interest of ensuring a safe and secure environment for online transactions,Other,NEGATIVE
+Flipkart Public Pages,what is a 3d secure password,Other,NEGATIVE
+Flipkart Public Pages,"the 3d secure password is implemented by visa and mastercard in partnership with card issuing banks under the verified by visa and mastercard securecode services, respectively",Other,NEGATIVE
+Flipkart Public Pages,the 3d secure password adds an additional layer of security through identity verification for your online creditdebit card transactions,Other,POSITIVE
+Flipkart Public Pages,"this password, which is created by you, is known only to you",Other,NEGATIVE
+Flipkart Public Pages,this ensures that only you can use your card for online purchases,Other,NEGATIVE
+Flipkart Public Pages,how can i get the 3d secure password for my creditdebit card,Other,NEGATIVE
+Flipkart Public Pages,you can register for the 3d secure password for your creditdebit card by visiting your banks website,Other,NEGATIVE
+Flipkart Public Pages,the registration links for some of the banks have been provided below for easy reference state bank of india icici bank hdfc bank punjab national bank axis bank corporation bank andhra bank bank of baroda standard chartered india union bank of india central bank of india citibank deutsche bank dhanlakshmi bank idbi bank canara bank indusind bank federal bank kotak mahindra bank karur vysya bank oriental bank of commerce south indian bank vijaya bank  can i use my banks internet banking feature to make a payment,Payment,NEGATIVE
+Flipkart Public Pages,flipkart offers you the convenience of using your banks internet banking service to make a payment towards your order,Payment,NEGATIVE
+Flipkart Public Pages,"with this you can directly transfer funds from your bank account, while conducting a highly secure transaction",Other,POSITIVE
+Flipkart Public Pages,we accept payment through internet banking for the following banks abn amro bank axis bank allahabad bank andhra bank bank of bahrain and kuwait bank of baroda bank of india bank of maharashtra bank of rajasthan central bank of india citibank city union bank corporation bank deutsche bank development credit bank dhanlaxmi bank federal bank hdfc bank icici bank idbi bank ing vysya bank indian overseas bank indian bank indusind bank jammu  kashmir bank karnataka bank karur vysya bank kotak mahindra bank lakshmi vilas bank oriental bank of commerce punjab national bank royal bank of scotland south indian bank standard chartered bank state bank of hyderabad state bank of india state bank of mysore state bank of travancore syndicate bank tamilnad mercantile bank union bank of india united bank of india vijaya bank yes bank can i make a creditdebit card or internet banking payment on flipkart through my mobile,Payment,NEGATIVE
+Flipkart Public Pages,"yes, you can make credit card payments through the flipkart mobile site and application",Payment,NEGATIVE
+Flipkart Public Pages,flipkart uses 256bit encryption technology to protect your card information while securely transmitting it to the secure and trusted payment gateways managed by leading banks,Payment,NEGATIVE
+Flipkart Public Pages,how does instant cashback work,Other,POSITIVE
+Flipkart Public Pages,the cashback offer is instant and exclusive to flipkart,Other,POSITIVE
+Flipkart Public Pages,you only pay the final price you see in your shopping cart,Other,NEGATIVE
+Flipkart Public Pages,how do i place a cash on delivery cod order,Delivery,NEGATIVE
+Flipkart Public Pages,all items that have the cash on delivery available icon are valid for order by cash on delivery,Delivery,NEGATIVE
+Flipkart Public Pages,add the items to your cart and proceed to checkout,Other,POSITIVE
+Flipkart Public Pages,"when prompted to choose a payment option, select pay by cash on delivery",Delivery,NEGATIVE
+Flipkart Public Pages,"enter the captcha text as shown, for validation",Other,NEGATIVE
+Flipkart Public Pages,"once verified and confirmed, your order will be processed for shipment in the time specified, from the date of confirmation",Other,NEGATIVE
+Flipkart Public Pages,you will be required to make a cashonly payment to our delivery partner at the time of delivery of your order to complete the payment,Delivery,NEGATIVE
+Flipkart Public Pages,"terms  conditions the maximum order value for cod is 50,000 gift cards or store credit cannot be used for cod orders cashonly payment at the time of delivery",Delivery,NEGATIVE
+Flipkart Public Pages,what is flipkarts credit card emi option,Other,NEGATIVE
+Flipkart Public Pages,"with flipkarts credit card emi option, you can choose to pay in easy installments of 3, 6, 9, 12, 18, or 24 months with credit cards from the following banks hdfc citi icici kotak axis indusind sbi standard chartered hsbc 18  24 months emi options are available from select banks only",Other,NEGATIVE
+Flipkart Public Pages,"please refer to the table below for more details banks supports 18  24 months tenure minimum order value to avail 18  24 months emi options hdfc yes  10,000 citi yes  10,000 icici yes  10,000 kotak yes  4,000 axis yes  4,000 indusind yes  4,000 sbi no na standard chartered yes  4,000 hsbc no na there is no processing fee charged for availing flipkarts emi payment option",Payment,NEGATIVE
+Flipkart Public Pages,"on return or exchange, interest charged by the bank till that time will not be refunded by flipkart",Refund,NEGATIVE
+Flipkart Public Pages,"you may check with the respective bankissuer on how a cancellation, refund or preclosure could affect the emi terms, and what interest charges would be levied on you for the same",Refund,NEGATIVE
+Flipkart Public Pages,"example and calculations the table below shows a representative rendering of emi plans for a rs 20,000 purchase on flipkart paid using the emi payment plan tenure months loan amount monthly installment bank interest rate total effective price you pay interest paid to bank 3 rs 20,000 rs 6,800",Payment,NEGATIVE
+Flipkart Public Pages,"33 6 rs 20,000 rs 3,450",Other,NEGATIVE
+Flipkart Public Pages,"80 9 rs 20,000 rs 2,344",Other,NEGATIVE
+Flipkart Public Pages,"89 12 rs 20,000 rs 1,786",Other,NEGATIVE
+Flipkart Public Pages,15 how do i make a payment using flipkarts credit card emi option,Payment,NEGATIVE
+Flipkart Public Pages,"once youve added the desired items to your flipkart shopping cart, proceed with your order as usual by entering your address",Other,NEGATIVE
+Flipkart Public Pages,"when youre prompted to choose a payment mode for your order, select emi  follow these simple steps choose your creditcard issuing bank you wish to pay from select the emi plan of your preference enter your credit card details click save and pay please note that the full amount will be charged on your card the day of the transaction",Payment,NEGATIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,shipping store online  buy shipping online at best price in india  flipkart,Delivery,POSITIVE
+Flipkart Public Pages,com explore plus login become a seller more cart shipping why does the delivery date not correspond to the delivery timeline of xy business days,Delivery,NEGATIVE
+Flipkart Public Pages,"it is possible that the seller or our delivery partners have a holiday between the day you placed your order and the date of delivery, which is based on the timelines shown on the product page",Delivery,NEGATIVE
+Flipkart Public Pages,"in this case, we add a day to the estimated date",Other,NEGATIVE
+Flipkart Public Pages,some delivery partners and sellers do not work on sundays and this is factored in to the delivery dates,Delivery,NEGATIVE
+Flipkart Public Pages,what is the estimated delivery time,Delivery,NEGATIVE
+Flipkart Public Pages,sellers generally procure and ship the items within the time specified on the product page,Other,NEGATIVE
+Flipkart Public Pages,business days exclude public holidays and sundays,Other,NEGATIVE
+Flipkart Public Pages,estimated delivery time depends on the following factors the seller offering the product products availability with the seller the destination to which you want the order shipped to and location of the seller,Delivery,NEGATIVE
+Flipkart Public Pages,why does the estimated delivery time vary for each seller,Delivery,NEGATIVE
+Flipkart Public Pages,you have probably noticed varying estimated delivery times for sellers of the product you are interested in,Delivery,NEGATIVE
+Flipkart Public Pages,"delivery times are influenced by product availability, geographic location of the seller, your shipping destination and the delivery partners timetodeliver in your location",Delivery,NEGATIVE
+Flipkart Public Pages,please enter your default pin code on the product page you dont have to enter it every single time to know more accurate delivery times on the product page itself,Delivery,NEGATIVE
+Flipkart Public Pages,seller does notcannot ship to my area,Other,NEGATIVE
+Flipkart Public Pages,please enter your pincode on the product page you dont have to enter it every single time to know whether the product can be delivered to your location,Other,NEGATIVE
+Flipkart Public Pages,"if you havent provided your pincode until the checkout stage, the pincode in your shipping address will be used to check for serviceability",Delivery,NEGATIVE
+Flipkart Public Pages,"whether your location can be serviced or not depends on whether the seller ships to your location legal restrictions, if any, in shipping particular products to your location the availability of reliable delivery partners in your location at times sellers prefer not to ship to certain locations",Delivery,NEGATIVE
+Flipkart Public Pages,this is entirely at their discretion,Other,POSITIVE
+Flipkart Public Pages,why is the cod option not offered in my location,Other,NEGATIVE
+Flipkart Public Pages,availability of cod depends on the ability of our delivery partner servicing your location to accept cash as payment at the time of delivery,Delivery,NEGATIVE
+Flipkart Public Pages,our delivery partners have limits on the cash amount payable on delivery depending on the destination and your order value might have exceeded this limit,Delivery,NEGATIVE
+Flipkart Public Pages,please enter your pin code on the product page to check if cod is available in your location,Other,NEGATIVE
+Flipkart Public Pages,"i need to return an item, how do i arrange for a pickup",Refund,NEGATIVE
+Flipkart Public Pages,returns are easy,Refund,POSITIVE
+Flipkart Public Pages,contact us to initiate a return,Refund,POSITIVE
+Flipkart Public Pages,"you will receive a call explaining the process, once you have initiated a return",Refund,NEGATIVE
+Flipkart Public Pages,wherever possible ekart logistics will facilitate the pickup of the item,Other,NEGATIVE
+Flipkart Public Pages,"in case, the pickup cannot be arranged through ekart, you can return the item through a thirdparty delivery service",Delivery,NEGATIVE
+Flipkart Public Pages,return fees are borne by the seller,Refund,NEGATIVE
+Flipkart Public Pages,i did not receive my order but got a delivery confirmation smsemail,Delivery,NEGATIVE
+Flipkart Public Pages,"in case the product was not delivered and you received a delivery confirmation emailsms, report the issue within 7 days from the date of delivery confirmation for the seller to investigate",Delivery,NEGATIVE
+Flipkart Public Pages,"what do the different tags like in stock, available mean",Other,NEGATIVE
+Flipkart Public Pages,"in stock for items listed as in stock, sellers will mention the delivery time based on your location pincode usually 23 business days, 45 business days or 46 business days in areas where standard delivery service is available",Delivery,NEGATIVE
+Flipkart Public Pages,"for other areas, orders will be sent by registered post through the indian postal service which may take 12 weeks depending on the location",Other,NEGATIVE
+Flipkart Public Pages,available the seller might not have the item in stock but can procure it when an order is placed for the item,Other,NEGATIVE
+Flipkart Public Pages,the delivery time will depend on the estimated procurement time and the estimated shipping time to your location,Delivery,NEGATIVE
+Flipkart Public Pages,preorder or forthcoming such items are expected to be released soon and can be prebooked for you,Other,NEGATIVE
+Flipkart Public Pages,the item will be shipped to you on the day of its official release launch and will reach you in 2 to 6 business days,Other,POSITIVE
+Flipkart Public Pages,the preorder duration varies from item to item,Other,NEGATIVE
+Flipkart Public Pages,"once known, release time and date is mentioned",Other,NEGATIVE
+Flipkart Public Pages,"5th may, august 3rd week out of stock currently, the item is not available for sale",Other,NEGATIVE
+Flipkart Public Pages,use the notify me feature to know once it is available for purchase,Other,NEGATIVE
+Flipkart Public Pages,"imported sometimes, items have to be sourced by sellers from outside india",Other,NEGATIVE
+Flipkart Public Pages,these items are mentioned as imported on the product page and can take at least 10 days or more to be delivered to you,Other,NEGATIVE
+Flipkart Public Pages,back in stock soon the item is popular and is sold out,Other,POSITIVE
+Flipkart Public Pages,you can however book an order for the product and it will be shipped according to the timelines mentioned by the seller,Other,NEGATIVE
+Flipkart Public Pages,temporarily unavailable the product is currently out of stock and is not available for purchase,Other,NEGATIVE
+Flipkart Public Pages,the product could be in stock soon,Other,NEGATIVE
+Flipkart Public Pages,use the notify me feature to know when it is available for purchase,Other,NEGATIVE
+Flipkart Public Pages,permanently discontinued this product is no longer available because it is obsolete andor its production has been discontinued,Other,NEGATIVE
+Flipkart Public Pages,out of print this product is not available because it is no longer being published and has been permanently discontinued,Other,NEGATIVE
+Flipkart Public Pages,does flipkart deliver internationally,Other,POSITIVE
+Flipkart Public Pages,"as of now, flipkart doesnt deliver items internationally",Other,NEGATIVE
+Flipkart Public Pages,"you will be able to make your purchases on our site from anywhere in the world with creditdebit cards issued in india and 21 other countries, but please ensure the delivery address is in india",Delivery,POSITIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,"online shopping india  buy mobiles, electronics, appliances, clothing and more online at flipkart",Other,POSITIVE
+Flipkart Public Pages,com explore plus help center login become a seller more cart type of issue help with your issues help with your order help with other issues help topics help centre login to get help with your recent orders and issues log in want to reach us old style,Other,NEGATIVE
+Flipkart Public Pages,"here is our postal address about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,return policy  flipkart,Refund,NEGATIVE
+Flipkart Public Pages,com explore plus login become a seller more cart order cancellation and return policy cancellation policy the customer can choose to cancel an order any time before its dispatched,Refund,NEGATIVE
+Flipkart Public Pages,the order cannot be canceled once its out for delivery,Delivery,POSITIVE
+Flipkart Public Pages,"however, the customer may choose to reject it at the doorstep",Other,NEGATIVE
+Flipkart Public Pages,the time window for cancellation varies based on different categories and the order cannot be canceled once the specified time has passed,Other,NEGATIVE
+Flipkart Public Pages,"in some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged",Other,POSITIVE
+Flipkart Public Pages,the details about the time window mentioned on the product page or order confirmation page will be considered final,Other,NEGATIVE
+Flipkart Public Pages,"in case of any cancellation from the seller due to unforeseen circumstances, a full refund will be initiated for prepaid orders",Refund,NEGATIVE
+Flipkart Public Pages,flipkart reserves the right to accept the cancellation of any order,Other,NEGATIVE
+Flipkart Public Pages,flipkart also reserves the right to waive off or modify the time window or cancellation fee from time to time,Other,NEGATIVE
+Flipkart Public Pages,"cancellation policy  hyperlocal the orders placed by you on the platform are noncancellable and nonrefundable via self serve under minutes delivery option owing to quick delivery times, except if cancellationrefund is requested via cx agent under the following circumstances the order could not be delivered within the estimated time that was displayed while placing the order the order has not been picked by the delivery partner the seller has not accepted or has canceled the order due to reasons not attributable to you",Delivery,NEGATIVE
+Flipkart Public Pages,"easy doorstep cancellation any other reason that the platform may update from time to time we reserve the right to cancel your order, in whole or in part, for reasons including product unavailability, unforeseen circumstances beyond our control force majeure, suspected fraudulent activity, violation of our terms of use, or logistical constraints",Other,NEGATIVE
+Flipkart Public Pages,"in all instances of cancellation by us, you will not be charged for the canceled order",Other,NEGATIVE
+Flipkart Public Pages,any payments you have already made will be promptly refunded within 57 business days for any cancellations,Refund,NEGATIVE
+Flipkart Public Pages,you can track the status of your refund on the order details pagesection,Refund,NEGATIVE
+Flipkart Public Pages,"our return, cancellation, and refund policies may be subject to additional reasonable terms and conditions",Refund,NEGATIVE
+Flipkart Public Pages,these will be communicated to you periodically through the platforms push notifications or other communication methods as outlined within these terms or as determined by the company,Other,NEGATIVE
+Flipkart Public Pages,"returns policy returns is a scheme provided by respective sellers directly under this policy in terms of which the option of exchange, replacement and or refund is offered by the respective sellers to you",Refund,NEGATIVE
+Flipkart Public Pages,all products listed under a particular category may not have the same returns policy,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the returnsreplacement policy provided on the product page shall prevail over the general returns policy",Refund,POSITIVE
+Flipkart Public Pages,do refer the respective items applicable returnreplacement policy on the product page for any exceptions to this returns policy and the table below the return policy is divided into three parts do read all sections carefully to understand the conditions and cases under which returns will be accepted,Refund,NEGATIVE
+Flipkart Public Pages,"part 1  category, return window and actions possible category returns window, actions possible and conditions if any furniture home pet supplies  rest of home",Refund,NEGATIVE
+Flipkart Public Pages,"except home dcor, furnishing, home improvement tools, household items 10 days refund or replacement for products requiring installation, returns shall be eligible only when such products are installed by the brand39s authorized personnel",Refund,NEGATIVE
+Flipkart Public Pages,"in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a refundreplacement of the same product will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 10 days of delivery or installation wherever applicable, you will be directed to a brand service centre to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided lifestyle watch, tshirt, footwear, sari, short, dress, kids capri, shorts  tops, mens ethnic wear, shirt, formals, jeans, clothing accessory, womens ethnic wear, fabric, blouse, jean, skirt, trousers, bra, bags, raincoat, sunglass, belt, frame, backpack, suitcase, luggage, etc",Other,NEGATIVE
+Flipkart Public Pages,"lifestyle jewellery, footwear accessories, travel accessories, watch accessories, etc",Other,POSITIVE
+Flipkart Public Pages,"lifestyle winterwearsweatshirt, jacket, sweater, cardigan, kidsthermal, pullover, windcheater, tracksuit, thermal,shawl, tracktop, glove, muffler, scarf, blazer, uniformsweatshirt, uniformblazer, kidsmuffler, kidsmitten, shrug, poncho,uniformsweater, cap, waistcoat, legwarmer, legging,elderhalloweencostume 10 days refund, replacement or exchange medicine allopathy  homeopathy 2 days refund home home improvement tools, household items, home dcor, furnishing 7 days refund or replacement books all books sports equipments racquet, ball, support, gloves, bags etc",Refund,NEGATIVE
+Flipkart Public Pages,"exercise  fitness equipments home gym combos, dumbbell etc",Other,NEGATIVE
+Flipkart Public Pages,"auto accessories  car and bike accessories helmets, car kit, media players etc",Other,NEGATIVE
+Flipkart Public Pages,7 days replacement only free replacement will be provided within 7 days if the product is delivered in defectivedamaged condition or different from the ordered item,Other,NEGATIVE
+Flipkart Public Pages,"please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"toys remote controlled toys, learning toys, stuffed toys etc",Other,NEGATIVE
+Flipkart Public Pages,"stationary pens, diary notebooks, calculators etc",Other,NEGATIVE
+Flipkart Public Pages,"musical instruments microphones  accessories, guitars, violins etc",Other,NEGATIVE
+Flipkart Public Pages,7 days replacement only free replacement will be provided within 7 days if the product is delivered in defectivedamaged condition or different from the ordered item,Other,NEGATIVE
+Flipkart Public Pages,"please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"nonreturnable  all wind instruments harmonicas, flutes etc",Refund,NEGATIVE
+Flipkart Public Pages,this item is nonreturnable due to hygiene and personal wellness,Refund,POSITIVE
+Flipkart Public Pages,"in case these products are delivered in damageddefective condition or different from the ordered item, we will provide a free replacement",Other,NEGATIVE
+Flipkart Public Pages,"all mobiles except apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones, electronics  except apple  beats, google, realme, samsung, jbl infinity, epson, hp, dell, canon, mi, dizo products tablets, laptops, smart watches all small home appliances except chimney, water purifier, fan, geyser furniture  hammock swing  stool 7 days replacement only in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to a brand service center to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided",Other,NEGATIVE
+Flipkart Public Pages,"mobile  apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones electronics  acer, amkette, applebeats, bose, brother, canon, compaq, creative, dell, dizo, epson, google, gopro, govo, hp, infinity, jbl, lenovo, lg, lifelong, mi, motorola, nothing, oneplus, oppo, panasonic, philips, realme, redmi, samsung, sansui, seagate, sonos, sony, thomson, total, xiaomi products tablets, laptops, smart watches, headphones, speakers large vu, lg, godrej, haier, ifb, hindware , glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl, toshiba, hitachi, rockwell, kent 7 days service center replacementrepair only brand assistance for device related issues is subject to brand warranty guidelines and service policies",Other,NEGATIVE
+Flipkart Public Pages,"please reach out to the nearest brand authorized service centre for more detail please note that flipkart is an online marketplace and the final decision on replacement of defective device rests with the sellerbrand for samsung, in case of doa approved by brand, share the certificate of approval to the flipkart customer support team to process your complaint authorized service partner locator for brands click here for any other issues with the product, you may contact flipkart  flipkarts 247 customer care furniture, large appliances  except vu, lg, godrej,haier, ifb, hindware , glen, faber, agaro, voltas, bosch, vu, lg, godrej, haier, ifb, hindware, glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl,toshiba, hitachi, rockwell, kent  rest of small home appliances  chimney, water purifier, fan, geyser only 10 days replacement only for products requiring installation, returns shall be eligible only when such products are installed by the brands authorized personnel",Refund,NEGATIVE
+Flipkart Public Pages,"in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 10 days of delivery or installation wherever applicable, you will be directed to a brand service centre to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"in any case, only one replacement shall be provided",Other,NEGATIVE
+Flipkart Public Pages,"grocery excluding minutes  dairy, bakery, fruits and vegetables 2 days refund only grocery excluding minutes remaining items under grocery like pulses, atta, edible and more 7 days refund only no questions asked 10 days refund or replacement this policy enables easy product return requests for customers through the platform, subject to product validations at the time of pickup and fraud prevention mechanisms",Refund,NEGATIVE
+Flipkart Public Pages,this policy shall be applicable only if the product was bought when this policy was applicable to the product,Other,NEGATIVE
+Flipkart Public Pages,"if not, the policy provided here shall apply to the order",Other,NEGATIVE
+Flipkart Public Pages,"it is clarified that a customer may only be able to seek a onetime replacement under this policy, subject to the other terms provided herein",Other,NEGATIVE
+Flipkart Public Pages,exceptions to this policy following claims will be covered under the policy provided here and through corresponding validation processes a,Other,NEGATIVE
+Flipkart Public Pages,product undelivered b,Other,NEGATIVE
+Flipkart Public Pages,productaccessories missing c,Other,NEGATIVE
+Flipkart Public Pages,wrong productaccessories delivered no returns categories some products in the above categories are not returnable due to their nature or other reasons,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the policy on the product page shall prevail",Other,POSITIVE
+Flipkart Public Pages,you can view the complete list of nonreturnable products here,Refund,POSITIVE
+Flipkart Public Pages,"refurbished 7 days replacement only to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Other,NEGATIVE
+Flipkart Public Pages,"if a defect is determined within the returns window, a replacement of the same model will be provided at no additional cost",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to the warranty partner for resolving any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"part 2  returns pickup and processing in case of returns where you would like items to be picked up from a different address, the address can only be changed if pickup service is available at the new address during pickup, your product will be checked for the following conditions category conditions correct product imei name image brand serial number article number bar code should match and mrp tag should be undetached and clearly visible",Refund,NEGATIVE
+Flipkart Public Pages,"complete product all inthebox accessories like remote control, starter kits, instruction manuals, chargers, headphones, etc",Other,POSITIVE
+Flipkart Public Pages,", freebies and combos if any should be present",Other,NEGATIVE
+Flipkart Public Pages,"unused product the product should be unused, unwashed, unsoiled, without any stains and with nontampered quality check sealsreturn tagswarranty seals wherever applicable",Refund,NEGATIVE
+Flipkart Public Pages,"before returning a mobile laptop tablet, the device should be formatted and screen lock pin, pattern or fingerprint must be disabled",Refund,NEGATIVE
+Flipkart Public Pages,icloud lock must be disabled for apple devices,Other,NEGATIVE
+Flipkart Public Pages,"undamaged product the product including sim trays charging port headphone port, backpanel etc",Other,NEGATIVE
+Flipkart Public Pages,"should be undamaged and without any scratches, dents, tears or holes",Other,POSITIVE
+Flipkart Public Pages,undamaged packaging the products original packaging box should be undamaged,Other,NEGATIVE
+Flipkart Public Pages,the field executive will refuse to accept the return if any of the above conditions are not met,Refund,NEGATIVE
+Flipkart Public Pages,"for any products for which a refund is to be given, the refund will be processed once the returned product has been received by the seller",Refund,NEGATIVE
+Flipkart Public Pages,"part 3  general rules for a successful return in certain cases where the seller is unable to process a replacement for any reason whatsoever, a refund will be given",Refund,NEGATIVE
+Flipkart Public Pages,"in cases where a product accessory is found missingdamageddefective, the seller may either process a replacement of the particular accessory or issue an egv for an amount equivalent to the price of the accessory, at the sellers discretion",Other,NEGATIVE
+Flipkart Public Pages,"during open box deliveries, while accepting your order, if you received a different or a damaged product, you will be given a refund on the spot refunds for cashondelivery orders",Delivery,NEGATIVE
+Flipkart Public Pages,"once you have accepted an open box delivery, no return request will be processed, except for manufacturing defects",Delivery,NEGATIVE
+Flipkart Public Pages,"in such cases, these categoryspecific replacementreturn general conditions will be applicable",Refund,POSITIVE
+Flipkart Public Pages,"click here to know more about open box delivery for products where installation is provided by flipkarts service partners, do not open the product packaging by yourself",Delivery,NEGATIVE
+Flipkart Public Pages,flipkart authorised personnel shall help in unboxing and installation of the product,Other,POSITIVE
+Flipkart Public Pages,"for furniture, any productrelated issues will be checked by authorised service personnel free of cost and attempted to be resolved by replacing the faulty defective part of the product",Other,NEGATIVE
+Flipkart Public Pages,full replacement will be provided only in cases where the service personnel opines that replacing the faultydefective part will not resolve the issue,Other,NEGATIVE
+Flipkart Public Pages,"flipkart holds the right to restrict the number of returns created per order unit, post the evaluation of the productorder defect is undertaken by flipkarts authorized representative",Refund,NEGATIVE
+Flipkart Public Pages,return policy  hyperlocal return is a scheme provided by respective sellers directly under this policy in terms of which the option of refund is offered by the respective sellers to you,Refund,NEGATIVE
+Flipkart Public Pages,all products listed under a particular category may not have the same returns policy,Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the return policy provided on the product page shall prevail over the general returns policy",Refund,POSITIVE
+Flipkart Public Pages,do refer to the respective items applicable return policy on the product page for any exceptions to this returns policy and the table below the return policy is divided into three parts do read all sections carefully to understand the conditions and cases under which returns will be accepted,Refund,NEGATIVE
+Flipkart Public Pages,"category, return window, and possible actions category returns window, actions possible and conditions if any freshfruit,vegetable,milk nonprescription medicines paracetetamol, diegene, limcee etc",Refund,NEGATIVE
+Flipkart Public Pages,"1 day return refund fresh  egg, fishseafood and meat 2 days return refund fresh bread, cheese, butter etc",Refund,NEGATIVE
+Flipkart Public Pages,"grocery  food  nutrition pulses, flour, cooking ingredients, namkeen, etc",Other,POSITIVE
+Flipkart Public Pages,"grocery  personal care  shampoo, lotions, soap, face wash, etc",Other,NEGATIVE
+Flipkart Public Pages,"grocery  other detergent, washing liquid, etc",Other,NEGATIVE
+Flipkart Public Pages,"3 days return refund books all books sports equipment racquet, ball, support,etc toys remote controlled toys, learning toys, stuffed toys etc",Refund,NEGATIVE
+Flipkart Public Pages,"stationary pens, diary notebooks, calculators etc",Other,NEGATIVE
+Flipkart Public Pages,"home utensils cooker, pan, etc",Other,POSITIVE
+Flipkart Public Pages,"7 days return please keep the product intact, with original accessories, user manual and warranty cards in the original packaging at the time of returning the product",Refund,POSITIVE
+Flipkart Public Pages,"all mobiles except apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones, electronics  except apple  beats, google, realme, samsung, jbl  infinity, epson, hp, dell, canon, mi, dizo products tablets, laptops, smart watches all small home appliances except chimney, water purifier, fan, geyser 7 days return refund only in order to help you resolve issues with your product, we may troubleshoot your product either through online tools, over the phone, andor through an inperson technical visit",Refund,NEGATIVE
+Flipkart Public Pages,"if no defect is confirmed or the issue is not diagnosed within 7 days of delivery, you will be directed to a brand service center to resolve any subsequent issues",Delivery,NEGATIVE
+Flipkart Public Pages,"mobile  apple, google, motorola, infinix, redmi, mi, vivo, poco, realme, samsung phones electronics  acer, amkette, applebeats, bose, brother, canon, compaq, creative, dell, dizo, epson, google, gopro, govo, hp, infinity, jbl, lenovo, lg, lifelong, mi, motorola, nothing, oneplus, oppo, panasonic, philips, realme, redmi, samsung, sansui, seagate, sonos, sony, thomson, total, xiaomi products tablets, laptops, smart watches, headphones, speakers large vu, lg, godrej, haier, ifb, hindware , glen, faber, agaro, voltas, bosch, pureit, philips, havells, elica, bajaj, kenstar, eureka forbes aquasure from aquaguard, aquaguard, livpure, eureka forbes, crompton, hindware snowcrest, hindware calisto, eurodomo, symphony, hindware atlantic, onida, candy, llyod, voltas beko, realme, daikin, carrier, mi, midea, whirlpool, blue star, panasonic, morphy richards, iffalcon, hisense, tcl, toshiba, hitachi, rockwell, kent 7 days service center replacementrepair only brand assistance for device related issues is subject to brand warranty guidelines and service policies",Other,NEGATIVE
+Flipkart Public Pages,"please reach out to the nearest brand authorized service centre for more detail please note that flipkart is an online marketplace and the final decision on returnreplacement of defective device rests with the sellerbrand for samsung, in case of doa approved by brand, share the certificate of approval to the flipkart customer support team to process your complaint authorized service partner locator for brands click here for any other issues with the product, you may contact flipkart  flipkarts 247 customer care home  bedsheet, pet food, furnishings, home decor, etc 7 days return refund for products requiring installation, returns shall be eligible only when such products are installed by the brand authorized personnel lifestyle watch, tshirt, footwear, sari, short, dress,etc",Refund,NEGATIVE
+Flipkart Public Pages,"lifestyle jewellery, footwear accessories, travel accessories, watch accessories, etc",Other,POSITIVE
+Flipkart Public Pages,"lifestyle winterwearsweatshirt, jacket, sweater,etc",Other,POSITIVE
+Flipkart Public Pages,"10 days return refund no return categories  diaper,bottle nipple,female urination device,women intimate care,teether soother,nipple puller,sanitary pad pantyliner ,condom,toothbrush,tampon,dental floss stick,toilet brush,cleaning glove ,boxer,trunk,sock,panty some products in the above categories are not returnable due to their nature or other reasons",Refund,NEGATIVE
+Flipkart Public Pages,"for all products, the policy on the product page shall prevail",Other,POSITIVE
+Flipkart Public Pages,"returns for damaged and wrong delivery of products may be accepted on case based within 5 days of delivery prescription medicines  medication such as antibiotics, pain killers etc 3 days return refund returns for damaged, wrong and expired products may be accepted",Delivery,NEGATIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,payments store online  buy payments online at best price in india  flipkart,Payment,POSITIVE
+Flipkart Public Pages,com explore plus login become a seller more cart payments how do i pay for a flipkart purchase,Payment,NEGATIVE
+Flipkart Public Pages,flipkart offers you multiple payment methods,Payment,POSITIVE
+Flipkart Public Pages,"whatever your online mode of payment, you can rest assured that flipkarts trusted payment gateway partners use secure encryption technology to keep your transaction details confidential at all times",Payment,NEGATIVE
+Flipkart Public Pages,"you may use internet banking, gift card, cash on delivery and wallet to make your purchase",Delivery,NEGATIVE
+Flipkart Public Pages,"flipkart also accepts payments made using visa, mastercard, maestro and american express creditdebit cards in india and 21 other countries",Payment,POSITIVE
+Flipkart Public Pages,are there any hidden charges octroi or sales tax when i make a purchase on flipkart,Other,NEGATIVE
+Flipkart Public Pages,there are no hidden charges when you make a purchase on flipkart,Other,NEGATIVE
+Flipkart Public Pages,the prices listed for all the items are final and allinclusive,Other,POSITIVE
+Flipkart Public Pages,the price you see on the product page is exactly what you pay,Other,POSITIVE
+Flipkart Public Pages,delivery charges may be extra depending on the seller policy,Delivery,NEGATIVE
+Flipkart Public Pages,please check individual seller for the same,Other,NEGATIVE
+Flipkart Public Pages,"in case of seller ws retail, the 50 delivery charge is waived off on orders worth 500 and over",Delivery,NEGATIVE
+Flipkart Public Pages,what is cash on delivery,Delivery,NEGATIVE
+Flipkart Public Pages,if you are not comfortable making an online payment on flipkart,Payment,NEGATIVE
+Flipkart Public Pages,"com, you can opt for the cash on delivery cod payment method instead",Delivery,NEGATIVE
+Flipkart Public Pages,"with cod you can pay in cash at the time of actual delivery of the product at your doorstep, without requiring you to make any advance payment online",Delivery,NEGATIVE
+Flipkart Public Pages,"the maximum order value for a cash on delivery cod payment is 50,000",Delivery,NEGATIVE
+Flipkart Public Pages,it is strictly a cashonly payment method,Payment,NEGATIVE
+Flipkart Public Pages,gift cards or store credit cannot be used for cod orders,Other,NEGATIVE
+Flipkart Public Pages,foreign currency cannot be used to make a cod payment,Payment,NEGATIVE
+Flipkart Public Pages,only indian rupees accepted,Other,NEGATIVE
+Flipkart Public Pages,how do i pay using a creditdebit card,Other,NEGATIVE
+Flipkart Public Pages,we accept payments made by creditdebit cards issued in india and 21 other countries,Payment,POSITIVE
+Flipkart Public Pages,"credit cards we accept payments made using visa, mastercard and american express credit cards",Payment,NEGATIVE
+Flipkart Public Pages,"to pay using your credit card at checkout, you will need your card number, expiry date, threedigit cvv number found on the backside of your card",Other,NEGATIVE
+Flipkart Public Pages,"after entering these details, you will be redirected to the banks page for entering the online 3d secure password",Other,NEGATIVE
+Flipkart Public Pages,"debit cards we accept payments made using visa, mastercard and maestro debit cards",Payment,NEGATIVE
+Flipkart Public Pages,"to pay using your debit card at checkout, you will need your card number, expiry date optional for maestro cards, threedigit cvv number optional for maestro cards",Other,NEGATIVE
+Flipkart Public Pages,you will then be redirected to your banks secure page for entering your online password issued by your bank to complete the payment,Payment,NEGATIVE
+Flipkart Public Pages,"internationally issued creditdebit cards cannot be used for flyte, wallet and egv paymentstopups",Payment,NEGATIVE
+Flipkart Public Pages,is it safe to use my creditdebit card on flipkart,Other,NEGATIVE
+Flipkart Public Pages,your online transaction on flipkart is secure with the highest levels of transaction security currently available on the internet,Other,POSITIVE
+Flipkart Public Pages,flipkart uses 256bit encryption technology to protect your card information while securely transmitting it to the respective banks for payment processing,Payment,NEGATIVE
+Flipkart Public Pages,all credit card and debit card payments on flipkart are processed through secure and trusted payment gateways managed by leading banks,Payment,POSITIVE
+Flipkart Public Pages,"banks now use the 3d secure password service for online transactions, providing an additional layer of security through identity verification",Other,NEGATIVE
+Flipkart Public Pages,what steps does flipkart take to prevent card fraud,Other,POSITIVE
+Flipkart Public Pages,flipkart realizes the importance of a strong fraud detection and resolution capability,Other,POSITIVE
+Flipkart Public Pages,we and our online payments partners monitor transactions continuously for suspicious activity and flag potentially fraudulent transactions for manual verification by our team,Payment,NEGATIVE
+Flipkart Public Pages,"in the rarest of rare cases, when our team is unable to rule out the possibility of fraud categorically, the transaction is kept on hold, and the customer is requested to provide identity documents",Other,NEGATIVE
+Flipkart Public Pages,the id documents help us ensure that the purchases were indeed made by a genuine card holder,Other,NEGATIVE
+Flipkart Public Pages,we apologise for any inconvenience that may be caused to customers and request them to bear with us in the larger interest of ensuring a safe and secure environment for online transactions,Other,NEGATIVE
+Flipkart Public Pages,what is a 3d secure password,Other,NEGATIVE
+Flipkart Public Pages,"the 3d secure password is implemented by visa and mastercard in partnership with card issuing banks under the verified by visa and mastercard securecode services, respectively",Other,NEGATIVE
+Flipkart Public Pages,the 3d secure password adds an additional layer of security through identity verification for your online creditdebit card transactions,Other,POSITIVE
+Flipkart Public Pages,"this password, which is created by you, is known only to you",Other,NEGATIVE
+Flipkart Public Pages,this ensures that only you can use your card for online purchases,Other,NEGATIVE
+Flipkart Public Pages,how can i get the 3d secure password for my creditdebit card,Other,NEGATIVE
+Flipkart Public Pages,you can register for the 3d secure password for your creditdebit card by visiting your banks website,Other,NEGATIVE
+Flipkart Public Pages,the registration links for some of the banks have been provided below for easy reference state bank of india icici bank hdfc bank punjab national bank axis bank corporation bank andhra bank bank of baroda standard chartered india union bank of india central bank of india citibank deutsche bank dhanlakshmi bank idbi bank canara bank indusind bank federal bank kotak mahindra bank karur vysya bank oriental bank of commerce south indian bank vijaya bank  can i use my banks internet banking feature to make a payment,Payment,NEGATIVE
+Flipkart Public Pages,flipkart offers you the convenience of using your banks internet banking service to make a payment towards your order,Payment,NEGATIVE
+Flipkart Public Pages,"with this you can directly transfer funds from your bank account, while conducting a highly secure transaction",Other,POSITIVE
+Flipkart Public Pages,we accept payment through internet banking for the following banks abn amro bank axis bank allahabad bank andhra bank bank of bahrain and kuwait bank of baroda bank of india bank of maharashtra bank of rajasthan central bank of india citibank city union bank corporation bank deutsche bank development credit bank dhanlaxmi bank federal bank hdfc bank icici bank idbi bank ing vysya bank indian overseas bank indian bank indusind bank jammu  kashmir bank karnataka bank karur vysya bank kotak mahindra bank lakshmi vilas bank oriental bank of commerce punjab national bank royal bank of scotland south indian bank standard chartered bank state bank of hyderabad state bank of india state bank of mysore state bank of travancore syndicate bank tamilnad mercantile bank union bank of india united bank of india vijaya bank yes bank can i make a creditdebit card or internet banking payment on flipkart through my mobile,Payment,NEGATIVE
+Flipkart Public Pages,"yes, you can make credit card payments through the flipkart mobile site and application",Payment,NEGATIVE
+Flipkart Public Pages,flipkart uses 256bit encryption technology to protect your card information while securely transmitting it to the secure and trusted payment gateways managed by leading banks,Payment,NEGATIVE
+Flipkart Public Pages,how does instant cashback work,Other,POSITIVE
+Flipkart Public Pages,the cashback offer is instant and exclusive to flipkart,Other,POSITIVE
+Flipkart Public Pages,you only pay the final price you see in your shopping cart,Other,NEGATIVE
+Flipkart Public Pages,how do i place a cash on delivery cod order,Delivery,NEGATIVE
+Flipkart Public Pages,all items that have the cash on delivery available icon are valid for order by cash on delivery,Delivery,NEGATIVE
+Flipkart Public Pages,add the items to your cart and proceed to checkout,Other,POSITIVE
+Flipkart Public Pages,"when prompted to choose a payment option, select pay by cash on delivery",Delivery,NEGATIVE
+Flipkart Public Pages,"enter the captcha text as shown, for validation",Other,NEGATIVE
+Flipkart Public Pages,"once verified and confirmed, your order will be processed for shipment in the time specified, from the date of confirmation",Other,NEGATIVE
+Flipkart Public Pages,you will be required to make a cashonly payment to our delivery partner at the time of delivery of your order to complete the payment,Delivery,NEGATIVE
+Flipkart Public Pages,"terms  conditions the maximum order value for cod is 50,000 gift cards or store credit cannot be used for cod orders cashonly payment at the time of delivery",Delivery,NEGATIVE
+Flipkart Public Pages,what is flipkarts credit card emi option,Other,NEGATIVE
+Flipkart Public Pages,"with flipkarts credit card emi option, you can choose to pay in easy installments of 3, 6, 9, 12, 18, or 24 months with credit cards from the following banks hdfc citi icici kotak axis indusind sbi standard chartered hsbc 18  24 months emi options are available from select banks only",Other,NEGATIVE
+Flipkart Public Pages,"please refer to the table below for more details banks supports 18  24 months tenure minimum order value to avail 18  24 months emi options hdfc yes  10,000 citi yes  10,000 icici yes  10,000 kotak yes  4,000 axis yes  4,000 indusind yes  4,000 sbi no na standard chartered yes  4,000 hsbc no na there is no processing fee charged for availing flipkarts emi payment option",Payment,NEGATIVE
+Flipkart Public Pages,"on return or exchange, interest charged by the bank till that time will not be refunded by flipkart",Refund,NEGATIVE
+Flipkart Public Pages,"you may check with the respective bankissuer on how a cancellation, refund or preclosure could affect the emi terms, and what interest charges would be levied on you for the same",Refund,NEGATIVE
+Flipkart Public Pages,"example and calculations the table below shows a representative rendering of emi plans for a rs 20,000 purchase on flipkart paid using the emi payment plan tenure months loan amount monthly installment bank interest rate total effective price you pay interest paid to bank 3 rs 20,000 rs 6,800",Payment,NEGATIVE
+Flipkart Public Pages,"33 6 rs 20,000 rs 3,450",Other,NEGATIVE
+Flipkart Public Pages,"80 9 rs 20,000 rs 2,344",Other,NEGATIVE
+Flipkart Public Pages,"89 12 rs 20,000 rs 1,786",Other,NEGATIVE
+Flipkart Public Pages,15 how do i make a payment using flipkarts credit card emi option,Payment,NEGATIVE
+Flipkart Public Pages,"once youve added the desired items to your flipkart shopping cart, proceed with your order as usual by entering your address",Other,NEGATIVE
+Flipkart Public Pages,"when youre prompted to choose a payment mode for your order, select emi  follow these simple steps choose your creditcard issuing bank you wish to pay from select the emi plan of your preference enter your credit card details click save and pay please note that the full amount will be charged on your card the day of the transaction",Payment,NEGATIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,shipping store online  buy shipping online at best price in india  flipkart,Delivery,POSITIVE
+Flipkart Public Pages,com explore plus login become a seller more cart shipping why does the delivery date not correspond to the delivery timeline of xy business days,Delivery,NEGATIVE
+Flipkart Public Pages,"it is possible that the seller or our delivery partners have a holiday between the day you placed your order and the date of delivery, which is based on the timelines shown on the product page",Delivery,NEGATIVE
+Flipkart Public Pages,"in this case, we add a day to the estimated date",Other,NEGATIVE
+Flipkart Public Pages,some delivery partners and sellers do not work on sundays and this is factored in to the delivery dates,Delivery,NEGATIVE
+Flipkart Public Pages,what is the estimated delivery time,Delivery,NEGATIVE
+Flipkart Public Pages,sellers generally procure and ship the items within the time specified on the product page,Other,NEGATIVE
+Flipkart Public Pages,business days exclude public holidays and sundays,Other,NEGATIVE
+Flipkart Public Pages,estimated delivery time depends on the following factors the seller offering the product products availability with the seller the destination to which you want the order shipped to and location of the seller,Delivery,NEGATIVE
+Flipkart Public Pages,why does the estimated delivery time vary for each seller,Delivery,NEGATIVE
+Flipkart Public Pages,you have probably noticed varying estimated delivery times for sellers of the product you are interested in,Delivery,NEGATIVE
+Flipkart Public Pages,"delivery times are influenced by product availability, geographic location of the seller, your shipping destination and the delivery partners timetodeliver in your location",Delivery,NEGATIVE
+Flipkart Public Pages,please enter your default pin code on the product page you dont have to enter it every single time to know more accurate delivery times on the product page itself,Delivery,NEGATIVE
+Flipkart Public Pages,seller does notcannot ship to my area,Other,NEGATIVE
+Flipkart Public Pages,please enter your pincode on the product page you dont have to enter it every single time to know whether the product can be delivered to your location,Other,NEGATIVE
+Flipkart Public Pages,"if you havent provided your pincode until the checkout stage, the pincode in your shipping address will be used to check for serviceability",Delivery,NEGATIVE
+Flipkart Public Pages,"whether your location can be serviced or not depends on whether the seller ships to your location legal restrictions, if any, in shipping particular products to your location the availability of reliable delivery partners in your location at times sellers prefer not to ship to certain locations",Delivery,NEGATIVE
+Flipkart Public Pages,this is entirely at their discretion,Other,POSITIVE
+Flipkart Public Pages,why is the cod option not offered in my location,Other,NEGATIVE
+Flipkart Public Pages,availability of cod depends on the ability of our delivery partner servicing your location to accept cash as payment at the time of delivery,Delivery,NEGATIVE
+Flipkart Public Pages,our delivery partners have limits on the cash amount payable on delivery depending on the destination and your order value might have exceeded this limit,Delivery,NEGATIVE
+Flipkart Public Pages,please enter your pin code on the product page to check if cod is available in your location,Other,NEGATIVE
+Flipkart Public Pages,"i need to return an item, how do i arrange for a pickup",Refund,NEGATIVE
+Flipkart Public Pages,returns are easy,Refund,POSITIVE
+Flipkart Public Pages,contact us to initiate a return,Refund,POSITIVE
+Flipkart Public Pages,"you will receive a call explaining the process, once you have initiated a return",Refund,NEGATIVE
+Flipkart Public Pages,wherever possible ekart logistics will facilitate the pickup of the item,Other,NEGATIVE
+Flipkart Public Pages,"in case, the pickup cannot be arranged through ekart, you can return the item through a thirdparty delivery service",Delivery,NEGATIVE
+Flipkart Public Pages,return fees are borne by the seller,Refund,NEGATIVE
+Flipkart Public Pages,i did not receive my order but got a delivery confirmation smsemail,Delivery,NEGATIVE
+Flipkart Public Pages,"in case the product was not delivered and you received a delivery confirmation emailsms, report the issue within 7 days from the date of delivery confirmation for the seller to investigate",Delivery,NEGATIVE
+Flipkart Public Pages,"what do the different tags like in stock, available mean",Other,NEGATIVE
+Flipkart Public Pages,"in stock for items listed as in stock, sellers will mention the delivery time based on your location pincode usually 23 business days, 45 business days or 46 business days in areas where standard delivery service is available",Delivery,NEGATIVE
+Flipkart Public Pages,"for other areas, orders will be sent by registered post through the indian postal service which may take 12 weeks depending on the location",Other,NEGATIVE
+Flipkart Public Pages,available the seller might not have the item in stock but can procure it when an order is placed for the item,Other,NEGATIVE
+Flipkart Public Pages,the delivery time will depend on the estimated procurement time and the estimated shipping time to your location,Delivery,NEGATIVE
+Flipkart Public Pages,preorder or forthcoming such items are expected to be released soon and can be prebooked for you,Other,NEGATIVE
+Flipkart Public Pages,the item will be shipped to you on the day of its official release launch and will reach you in 2 to 6 business days,Other,POSITIVE
+Flipkart Public Pages,the preorder duration varies from item to item,Other,NEGATIVE
+Flipkart Public Pages,"once known, release time and date is mentioned",Other,NEGATIVE
+Flipkart Public Pages,"5th may, august 3rd week out of stock currently, the item is not available for sale",Other,NEGATIVE
+Flipkart Public Pages,use the notify me feature to know once it is available for purchase,Other,NEGATIVE
+Flipkart Public Pages,"imported sometimes, items have to be sourced by sellers from outside india",Other,NEGATIVE
+Flipkart Public Pages,these items are mentioned as imported on the product page and can take at least 10 days or more to be delivered to you,Other,NEGATIVE
+Flipkart Public Pages,back in stock soon the item is popular and is sold out,Other,POSITIVE
+Flipkart Public Pages,you can however book an order for the product and it will be shipped according to the timelines mentioned by the seller,Other,NEGATIVE
+Flipkart Public Pages,temporarily unavailable the product is currently out of stock and is not available for purchase,Other,NEGATIVE
+Flipkart Public Pages,the product could be in stock soon,Other,NEGATIVE
+Flipkart Public Pages,use the notify me feature to know when it is available for purchase,Other,NEGATIVE
+Flipkart Public Pages,permanently discontinued this product is no longer available because it is obsolete andor its production has been discontinued,Other,NEGATIVE
+Flipkart Public Pages,out of print this product is not available because it is no longer being published and has been permanently discontinued,Other,NEGATIVE
+Flipkart Public Pages,does flipkart deliver internationally,Other,POSITIVE
+Flipkart Public Pages,"as of now, flipkart doesnt deliver items internationally",Other,NEGATIVE
+Flipkart Public Pages,"you will be able to make your purchases on our site from anywhere in the world with creditdebit cards issued in india and 21 other countries, but please ensure the delivery address is in india",Delivery,POSITIVE
+Flipkart Public Pages,"about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,"online shopping india  buy mobiles, electronics, appliances, clothing and more online at flipkart",Other,POSITIVE
+Flipkart Public Pages,com explore plus help center login become a seller more cart type of issue help with your issues help with your order help with other issues help topics help centre login to get help with your recent orders and issues log in want to reach us old style,Other,NEGATIVE
+Flipkart Public Pages,"here is our postal address about contact us about us careers flipkart stories press corporate information group companies myntra cleartrip shopsy help payments shipping cancellation  returns faq consumer policy cancellation  returns terms of use security privacy sitemap grievance redressal epr compliance fssai food safety connect app mail us flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india social registered office address flipkart internet private limited, buildings alyssa, begonia  clove embassy tech village, outer ring road, devarabeesanahalli village, bengaluru, 560103, karnataka, india cin  u51109ka2012ptc066107 telephone 04445614700  04467415800 become a seller advertise gift cards help center  2007 2025 flipkart",Delivery,NEGATIVE
+Flipkart Public Pages,return policy  flipkart,Refund,NEGATIVE
+Flipkart Public Pages,com explore plus login become a seller more cart order cancellation and return policy cancellation policy the customer can choose to cancel an order any time before its dispatched,Refund,NEGATIVE
+Flipkart Public Pages,the order cannot be canceled once its out for delivery,Delivery,POSITIVE
+Flipkart Public Pages,"however, the customer may choose to reject it at the doorstep",Other,NEGATIVE
+Flipkart Public Pages,the time window for cancellation varies based on different categories and the order cannot be canceled once the specified time has passed,Other,NEGATIVE
+Flipkart Public Pages,"in some cases, the customer may not be allowed to cancel the order for free, post the specified time and a cancellation fee will be charged",Other,POSITIVE
+Flipkart Public Pages,the details about the time window mentioned on the product page or order confirmation page will be considered final,Other,NEGATIVE
