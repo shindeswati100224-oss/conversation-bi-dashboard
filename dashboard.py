@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 # --------------------------------------------------
 # Page Config
@@ -57,14 +56,14 @@ col_f1, col_f2 = st.columns(2)
 
 sentiment_filter = col_f1.multiselect(
     "Sentiment",
-    df["sentiment"].unique().tolist(),
-    default=df["sentiment"].unique().tolist()
+    sorted(df["sentiment"].unique()),
+    default=sorted(df["sentiment"].unique())
 )
 
 issue_filter = col_f2.multiselect(
     "Issue Type",
-    df["issue_type"].unique().tolist(),
-    default=df["issue_type"].unique().tolist()
+    sorted(df["issue_type"].unique()),
+    default=sorted(df["issue_type"].unique())
 )
 
 filtered_df = df[
@@ -75,52 +74,34 @@ filtered_df = df[
 st.divider()
 
 # --------------------------------------------------
-# Sentiment Distribution Chart
+# Sentiment Distribution (SAFE)
 # --------------------------------------------------
 st.subheader("😊 Sentiment Distribution")
 
 if filtered_df.empty:
     st.warning("⚠️ No data available for selected filters")
 else:
-    sentiment_df = (
+    sentiment_chart = (
         filtered_df["sentiment"]
         .value_counts()
-        .reset_index(name="Count")
-        .rename(columns={"index": "Sentiment"})
+        .to_frame(name="Count")
     )
-
-    fig_sentiment = px.bar(
-        sentiment_df,
-        x="Sentiment",
-        y="Count",
-        height=300
-    )
-
-    st.plotly_chart(fig_sentiment, use_container_width=True)
+    st.bar_chart(sentiment_chart)
 
 # --------------------------------------------------
-# Issue Type Distribution Chart
+# Issue Type Distribution (SAFE)
 # --------------------------------------------------
 st.subheader("📦 Issue Type Distribution")
 
 if filtered_df.empty:
     st.warning("⚠️ No data available for selected filters")
 else:
-    issue_df = (
+    issue_chart = (
         filtered_df["issue_type"]
         .value_counts()
-        .reset_index(name="Count")
-        .rename(columns={"index": "Issue Type"})
+        .to_frame(name="Count")
     )
-
-    fig_issue = px.bar(
-        issue_df,
-        x="Issue Type",
-        y="Count",
-        height=300
-    )
-
-    st.plotly_chart(fig_issue, use_container_width=True)
+    st.bar_chart(issue_chart)
 
 st.divider()
 
@@ -135,7 +116,7 @@ else:
     st.dataframe(filtered_df, use_container_width=True)
 
 # --------------------------------------------------
-# Download Filtered Data
+# Download
 # --------------------------------------------------
 if not filtered_df.empty:
     csv = filtered_df.to_csv(index=False).encode("utf-8")
