@@ -76,13 +76,22 @@ filtered_df = df[
 # Charts
 # --------------------------------------------------
 st.subheader("😊 Sentiment Distribution")
+sentiment_df = (
+    filtered_df["sentiment"]
+    .value_counts()
+    .reset_index(name="Count")
+    .rename(columns={"index": "Sentiment"})
+)
+
 fig_sentiment = px.bar(
-    filtered_df["sentiment"].value_counts().reset_index(),
-    x="index",
-    y="sentiment",
-    labels={"index": "Sentiment", "sentiment": "Count"},
+    sentiment_df,
+    x="Sentiment",
+    y="Count",
     height=300
 )
+
+st.plotly_chart(fig_sentiment, use_container_width=True)
+
 st.plotly_chart(fig_sentiment, use_container_width=True)
 
 st.subheader("📦 Issue Type Distribution")
@@ -115,3 +124,4 @@ st.download_button(
 )
 
 st.caption("🚀 Built with Streamlit | Conversation BI Project")
+
