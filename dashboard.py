@@ -2,21 +2,21 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# ------------------ PAGE CONFIG ------------------
+# ---------------- PAGE CONFIG ----------------
 st.set_page_config(
-    page_title="E-commerce Customer Support Insights",
+    page_title="Conversation BI Dashboard",
     page_icon="📊",
     layout="wide"
 )
 
-# ------------------ LOAD DATA ------------------
+# ---------------- LOAD DATA ----------------
 @st.cache_data
 def load_data():
     return pd.read_csv("conversation_bi_ai_output.csv")
 
 df = load_data()
 
-# ------------------ SIDEBAR FILTERS ------------------
+# ---------------- SIDEBAR FILTERS ----------------
 st.sidebar.header("🎛 Filters")
 
 sentiment_filter = st.sidebar.multiselect(
@@ -36,57 +36,51 @@ filtered_df = df[
     (df["issue_type"].isin(issue_filter))
 ]
 
-# ------------------ HEADER ------------------
+# ---------------- TITLE ----------------
 st.title("📊 E-commerce Customer Support Insights")
-st.markdown("Interactive BI dashboard for customer issue & sentiment analysis")
+st.caption("End-to-End Conversation BI Project")
 
-# ------------------ KPI METRICS ------------------
+# ---------------- KPI METRICS ----------------
 col1, col2, col3 = st.columns(3)
 
 col1.metric("Total Conversations", len(filtered_df))
-col2.metric("Negative Sentiment", (filtered_df["sentiment"] == "NEGATIVE").sum())
-col3.metric("Positive Sentiment", (filtered_df["sentiment"] == "POSITIVE").sum())
+col2.metric("Negative", (filtered_df["sentiment"] == "NEGATIVE").sum())
+col3.metric("Positive", (filtered_df["sentiment"] == "POSITIVE").sum())
 
 st.divider()
 
-# ------------------ CHARTS ------------------
-c1, c2 = st.columns(2)
+# ---------------- CHARTS ----------------
+col1, col2 = st.columns(2)
 
-with c1:
+with col1:
     st.subheader("😊 Sentiment Distribution")
-    sentiment_counts = filtered_df["sentiment"].value_counts().reset_index()
-    sentiment_counts.columns = ["Sentiment", "Count"]
-
-    fig1 = px.bar(
-        sentiment_counts,
-        x="Sentiment",
-        y="Count",
-        height=350,
-        color="Sentiment",
-        text="Count"
+    fig_sentiment = px.bar(
+        filtered_df["sentiment"].value_counts().reset_index(),
+        x="index",
+        y="sentiment",
+        labels={"index": "Sentiment", "sentiment": "Count"},
+        height=300
     )
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig_sentiment, use_container_width=True)
 
-with c2:
+with col2:
     st.subheader("📦 Issue Type Distribution")
-    issue_counts = filtered_df["issue_type"].value_counts().reset_index()
-    issue_counts.columns = ["Issue Type", "Count"]
-
-    fig2 = px.pie(
-        issue_counts,
-        names="Issue Type",
-        values="Count",
-        height=350
+    fig_issue = px.bar(
+        filtered_df["issue_type"].value_counts().reset_index(),
+        x="index",
+        y="issue_type",
+        labels={"index": "Issue Type", "issue_type": "Count"},
+        height=300
     )
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig_issue, use_container_width=True)
 
 st.divider()
 
-# ------------------ DATA TABLE ------------------
+# ---------------- DATA TABLE ----------------
 st.subheader("📄 Filtered Conversations")
-st.dataframe(filtered_df, use_container_width=True, height=300)
+st.dataframe(filtered_df, height=300)
 
-# ------------------ CSV DOWNLOAD ------------------
+# ---------------- CSV DOWNLOAD ----------------
 st.download_button(
     label="📥 Download Filtered CSV",
     data=filtered_df.to_csv(index=False),
