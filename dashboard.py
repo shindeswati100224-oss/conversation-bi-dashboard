@@ -30,7 +30,7 @@ if uploaded_file is None:
 # --------------------------------------------------
 df = pd.read_csv(uploaded_file)
 
-# Safety check
+# Validate required columns
 required_columns = {"sentiment", "issue_type"}
 if not required_columns.issubset(df.columns):
     st.error("❌ CSV must contain 'sentiment' and 'issue_type' columns")
@@ -57,14 +57,14 @@ col_f1, col_f2 = st.columns(2)
 
 sentiment_filter = col_f1.multiselect(
     "Sentiment",
-    df["sentiment"].unique(),
-    default=df["sentiment"].unique()
+    df["sentiment"].unique().tolist(),
+    default=df["sentiment"].unique().tolist()
 )
 
 issue_filter = col_f2.multiselect(
     "Issue Type",
-    df["issue_type"].unique(),
-    default=df["issue_type"].unique()
+    df["issue_type"].unique().tolist(),
+    default=df["issue_type"].unique().tolist()
 )
 
 filtered_df = df[
@@ -72,46 +72,55 @@ filtered_df = df[
     (df["issue_type"].isin(issue_filter))
 ]
 
+st.divider()
+
 # --------------------------------------------------
-# Charts
+# Sentiment Distribution Chart
 # --------------------------------------------------
 st.subheader("😊 Sentiment Distribution")
-sentiment_df = (
-    filtered_df["sentiment"]
-    .value_counts()
-    .reset_index(name="Count")
-    .rename(columns={"index": "Sentiment"})
-)
 
-fig_sentiment = px.bar(
-    sentiment_df,
-    x="Sentiment",
-    y="Count",
-    height=300
-)
+if filtered_df.empty:
+    st.warning("⚠️ No data available for selected filters")
+else:
+    sentiment_df = (
+        filtered_df["sentiment"]
+        .value_counts()
+        .reset_index(name="Count")
+        .rename(columns={"index": "Sentiment"})
+    )
 
-st.plotly_chart(fig_sentiment, use_container_width=True)
+    fig_sentiment = px.bar(
+        sentiment_df,
+        x="Sentiment",
+        y="Count",
+        height=300
+    )
 
-st.plotly_chart(fig_sentiment, use_container_width=True)
+    st.plotly_chart(fig_sentiment, use_container_width=True)
 
+# --------------------------------------------------
+# Issue Type Distribution Chart
+# --------------------------------------------------
 st.subheader("📦 Issue Type Distribution")
-issue_df = (
-    filtered_df["issue_type"]
-    .value_counts()
-    .reset_index(name="Count")
-    .rename(columns={"index": "Issue Type"})
-)
 
-fig_issue = px.bar(
-    issue_df,
-    x="Issue Type",
-    y="Count",
-    height=300
-)
+if filtered_df.empty:
+    st.warning("⚠️ No data available for selected filters")
+else:
+    issue_df = (
+        filtered_df["issue_type"]
+        .value_counts()
+        .reset_index(name="Count")
+        .rename(columns={"index": "Issue Type"})
+    )
 
-st.plotly_chart(fig_issue, use_container_width=True)
+    fig_issue = px.bar(
+        issue_df,
+        x="Issue Type",
+        y="Count",
+        height=300
+    )
 
-st.plotly_chart(fig_issue, use_container_width=True)
+    st.plotly_chart(fig_issue, use_container_width=True)
 
 st.divider()
 
@@ -119,19 +128,22 @@ st.divider()
 # Data Table
 # --------------------------------------------------
 st.subheader("📄 Filtered Conversations")
-st.dataframe(filtered_df, use_container_width=True)
+
+if filtered_df.empty:
+    st.info("No records to display")
+else:
+    st.dataframe(filtered_df, use_container_width=True)
 
 # --------------------------------------------------
-# Download
+# Download Filtered Data
 # --------------------------------------------------
-csv = filtered_df.to_csv(index=False).encode("utf-8")
-st.download_button(
-    "📥 Download Filtered CSV",
-    csv,
-    "filtered_conversations.csv",
-    "text/csv"
-)
+if not filtered_df.empty:
+    csv = filtered_df.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        "📥 Download Filtered CSV",
+        csv,
+        "filtered_conversations.csv",
+        "text/csv"
+    )
 
 st.caption("🚀 Built with Streamlit | Conversation BI Project")
-
-
