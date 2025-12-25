@@ -1,130 +1,156 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
-# --------------------------------------------------
-# Page Config
-# --------------------------------------------------
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# -------------------------------------------------
+# PAGE CONFIG
+# -------------------------------------------------
 st.set_page_config(
     page_title="E-commerce Customer Support Insights",
     layout="wide"
 )
 
 st.title("📊 E-commerce Customer Support Insights")
-st.caption("Upload conversation data to analyze customer support performance")
+st.write("Upload conversation data to analyze customer support performance")
 
-# --------------------------------------------------
-# File Upload
-# --------------------------------------------------
+# -------------------------------------------------
+# FILE UPLOAD (Conversation Data)
+# -------------------------------------------------
 uploaded_file = st.file_uploader(
     "Upload conversation_bi_ai_output.csv",
     type=["csv"]
 )
 
-if uploaded_file is None:
-    st.info("⬆️ Please upload the CSV file to continue")
-    st.stop()
+if uploaded_file:
+    df = pd.read_csv(uploaded_file)
 
-# --------------------------------------------------
-# Load Data
-# --------------------------------------------------
-df = pd.read_csv(uploaded_file)
+    # -------------------------------------------------
+    # BASIC CLEANUP (safe)
+    # -------------------------------------------------
+    df.columns = df.columns.str.lower()
 
-# Validate required columns
-required_columns = {"sentiment", "issue_type"}
-if not required_columns.issubset(df.columns):
-    st.error("❌ CSV must contain 'sentiment' and 'issue_type' columns")
-    st.stop()
+    # -------------------------------------------------
+    # KPI METRICS
+    # -------------------------------------------------
+    total_conversations = len(df)
 
-# --------------------------------------------------
-# Metrics
-# --------------------------------------------------
-total_rows = len(df)
-sentiment_counts = df["sentiment"].value_counts()
+    negative_count = len(df[df["sentiment"].str.lower() == "negative"])
+    positive_count = len(df[df["sentiment"].str.lower() == "positive"])
 
-col1, col2, col3 = st.columns(3)
-col1.metric("Total Conversations", total_rows)
-col2.metric("Negative Sentiment", sentiment_counts.get("NEGATIVE", 0))
-col3.metric("Positive Sentiment", sentiment_counts.get("POSITIVE", 0))
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total Conversations", total_conversations)
+    col2.metric("Negative Sentiment", negative_count)
+    col3.metric("Positive Sentiment", positive_count)
 
-st.divider()
+    st.markdown("---")
 
-# --------------------------------------------------
-# Filters
-# --------------------------------------------------
-st.subheader("🎛 Filters")
-col_f1, col_f2 = st.columns(2)
+    # -------------------------------------------------
+    # FILTERS
+    # -------------------------------------------------
+    st.subheader("🔍 Filters")
 
-sentiment_filter = col_f1.multiselect(
-    "Sentiment",
-    sorted(df["sentiment"].unique()),
-    default=sorted(df["sentiment"].unique())
+    category_filter = st.selectbox(
+        "Select Issue Category",
+        ["All"] + sorted(df["category"].dropna().unique().tolist())
+    )
+
+    if category_filter != "All":
+        df = df[df["category"] == category_filter]
+
+    # -------------------------------------------------
+    # CATEGORY DISTRIBUTION
+    # -------------------------------------------------
+    st.subheader("📌 Issue Category Distribution")
+
+    category_chart = px.bar(
+        df,
+        x="category",
+        title="Issues by Category",
+        color="category"
+    )
+
+    st.plotly_chart(category_chart, use_container_width=True)
+
+    # -------------------------------------------------
+    # SENTIMENT DISTRIBUTION
+    # -------------------------------------------------
+    st.subheader("😊 Sentiment Distribution")
+
+    sentiment_chart = px.pie(
+        df,
+        names="sentiment",
+        title="Customer Sentiment Breakdown"
+    )
+
+    st.plotly_chart(sentiment_chart, use_container_width=True)
+
+    # -------------------------------------------------
+    # DATA PREVIEW
+    # -------------------------------------------------
+    with st.expander("📄 View Raw Conversation Data"):
+        st.dataframe(df)
+
+# =================================================
+# FAQ CHATBOT SECTION
+# =================================================
+st.markdown("---")
+st.header("🤖 Flipkart FAQ Chatbot")
+
+st.write(
+    "Ask questions related to **delivery, refund, return, payments** "
+    "based on public Flipkart FAQ pages."
 )
 
-issue_filter = col_f2.multiselect(
-    "Issue Type",
-    sorted(df["issue_type"].unique()),
-    default=sorted(df["issue_type"].unique())
-)
+# -------------------------------------------------
+# LOAD SCRAPED FAQ DATA
+# -------------------------------------------------
+try:
+    faq_df = pd.read_csv("flipkart_faq_scraped.csv")
 
-filtered_df = df[
-    (df["sentiment"].isin(sentiment_filter)) &
-    (df["issue_type"].isin(issue_filter))
-]
+    vectorizer = TfidfVectorizer(stop_words="english")
+    faq_vectors = vectorizer.fit_transform(faq_df["scraped_text"])
 
-st.divider()
+    def get_chatbot_answer(user_question):
+        user_vec = vectorizer.transform([user_question])
+        similarity = cosine_similarity(user_vec, faq_vectors)
 
-# --------------------------------------------------
-# Sentiment Distribution (SAFE)
-# --------------------------------------------------
-st.subheader("😊 Sentiment Distribution")
+        best_index = similarity.argmax()
+        best_score = similarity[0][best_index]
 
-if filtered_df.empty:
-    st.warning("⚠️ No data available for selected filters")
-else:
-    sentiment_chart = (
-        filtered_df["sentiment"]
-        .value_counts()
-        .to_frame(name="Count")
-    )
-    st.bar_chart(sentiment_chart)
+        if best_score < 0.25:
+            return "Sorry, I couldn't find an exact answer. Please try rephrasing."
 
-# --------------------------------------------------
-# Issue Type Distribution (SAFE)
-# --------------------------------------------------
-st.subheader("📦 Issue Type Distribution")
+        return faq_df.iloc[best_index]["scraped_text"]
 
-if filtered_df.empty:
-    st.warning("⚠️ No data available for selected filters")
-else:
-    issue_chart = (
-        filtered_df["issue_type"]
-        .value_counts()
-        .to_frame(name="Count")
-    )
-    st.bar_chart(issue_chart)
+    # -------------------------------------------------
+    # CHAT UI
+    # -------------------------------------------------
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
 
-st.divider()
-
-# --------------------------------------------------
-# Data Table
-# --------------------------------------------------
-st.subheader("📄 Filtered Conversations")
-
-if filtered_df.empty:
-    st.info("No records to display")
-else:
-    st.dataframe(filtered_df, use_container_width=True)
-
-# --------------------------------------------------
-# Download
-# --------------------------------------------------
-if not filtered_df.empty:
-    csv = filtered_df.to_csv(index=False).encode("utf-8")
-    st.download_button(
-        "📥 Download Filtered CSV",
-        csv,
-        "filtered_conversations.csv",
-        "text/csv"
+    user_input = st.text_input(
+        "Ask your question (example: How will I get my refund?)"
     )
 
-st.caption("🚀 Built with Streamlit | Conversation BI Project")
+    if st.button("Ask"):
+        if user_input:
+            answer = get_chatbot_answer(user_input)
+            st.session_state.chat_history.append(("You", user_input))
+            st.session_state.chat_history.append(("Bot", answer))
+
+    for role, message in st.session_state.chat_history:
+        if role == "You":
+            st.markdown(f"**🧑 You:** {message}")
+        else:
+            st.markdown(f"**🤖 Bot:** {message}")
+
+except FileNotFoundError:
+    st.warning(
+        "⚠️ FAQ data file `flipkart_faq_scraped.csv` not found. "
+        "Please add it to the project folder."
+    )
+
+
