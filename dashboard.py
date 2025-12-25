@@ -95,13 +95,22 @@ st.plotly_chart(fig_sentiment, use_container_width=True)
 st.plotly_chart(fig_sentiment, use_container_width=True)
 
 st.subheader("📦 Issue Type Distribution")
+issue_df = (
+    filtered_df["issue_type"]
+    .value_counts()
+    .reset_index(name="Count")
+    .rename(columns={"index": "Issue Type"})
+)
+
 fig_issue = px.bar(
-    filtered_df["issue_type"].value_counts().reset_index(),
-    x="index",
-    y="issue_type",
-    labels={"index": "Issue Type", "issue_type": "Count"},
+    issue_df,
+    x="Issue Type",
+    y="Count",
     height=300
 )
+
+st.plotly_chart(fig_issue, use_container_width=True)
+
 st.plotly_chart(fig_issue, use_container_width=True)
 
 st.divider()
@@ -124,4 +133,5 @@ st.download_button(
 )
 
 st.caption("🚀 Built with Streamlit | Conversation BI Project")
+
 
