@@ -3,118 +3,68 @@ import requests
 import pandas as pd
 import plotly.express as px
 
-# ================= CONFIG ================= #
-st.set_page_config(
-    page_title="Conversation BI + Chatbot",
-    layout="wide"
-)
-
-API_BASE_URL = "https://your-fastapi-app.onrender.com"
-
-# 🔁 Change to deployed FastAPI URL later
-
-# ================= PAGE TITLE ================= #
+st.set_page_config(page_title="Conversation BI + Chatbot", layout="wide")
 st.title("📊 E-commerce Customer Support Insights")
 
-# ================= FETCH SUMMARY ================= #
-with st.spinner("Connecting to API..."):
+API_BASE_URL = "https://conversation-bi-api.onrender.com"
+
+# ---------------- FETCH SUMMARY ----------------
+with st.spinner("Loading analytics..."):
     try:
-        summary = requests.get(f"{API_BASE_URL}/summary").json()
+        summary = requests.get(f"{API_BASE_URL}/summary", timeout=10).json()
     except:
-        st.error("❌ Cannot connect to FastAPI")
+        st.error("❌ Backend API not reachable")
         st.stop()
 
 if summary.get("status") != "success":
-    st.error("⚠️ API Error")
+    st.error("API error")
     st.json(summary)
     st.stop()
 
-# ================= METRICS ================= #
-st.subheader("📌 Key Metrics")
-
+# ---------------- METRICS ----------------
 c1, c2, c3 = st.columns(3)
 c1.metric("Total Conversations", summary["total_rows"])
 c2.metric("Issue Types", len(summary["issue_type_counts"]))
 c3.metric("Sources", len(summary["source_counts"]))
 
-# ================= SENTIMENT ================= #
-sentiment_df = pd.DataFrame(
-    summary["sentiment_counts"].items(),
-    columns=["Sentiment", "Count"]
-)
+# ---------------- CHARTS ----------------
+sentiment_df = pd.DataFrame(summary["sentiment_counts"].items(), columns=["Sentiment", "Count"])
+st.plotly_chart(px.pie(sentiment_df, names="Sentiment", values="Count"), use_container_width=True)
 
-fig1 = px.pie(sentiment_df, names="Sentiment", values="Count", title="Sentiment Analysis")
-st.plotly_chart(fig1, use_container_width=True)
+issue_df = pd.DataFrame(summary["issue_type_counts"].items(), columns=["Issue", "Count"])
+st.plotly_chart(px.bar(issue_df, x="Issue", y="Count"), use_container_width=True)
 
-# ================= ISSUE TYPES ================= #
-issue_df = pd.DataFrame(
-    summary["issue_type_counts"].items(),
-    columns=["Issue Type", "Count"]
-)
+# ---------------- TABLE ----------------
+data = requests.get(f"{API_BASE_URL}/data?limit=20").json()
+st.dataframe(pd.DataFrame(data))
 
-fig2 = px.bar(issue_df, x="Issue Type", y="Count", title="Customer Issues")
-st.plotly_chart(fig2, use_container_width=True)
-
-# ================= SOURCE ================= #
-source_df = pd.DataFrame(
-    summary["source_counts"].items(),
-    columns=["Source", "Count"]
-)
-
-fig3 = px.bar(source_df, x="Source", y="Count", title="Conversation Sources")
-st.plotly_chart(fig3, use_container_width=True)
-
-# ================= SAMPLE DATA ================= #
-st.subheader("📄 Sample Records")
-
-records = requests.get(f"{API_BASE_URL}/data?limit=20").json()
-st.dataframe(pd.DataFrame(records))
-
-# ==================================================
-# 🤖 CHATBOT SECTION (API-BASED)
-# ==================================================
+# ---------------- CHATBOT ----------------
 st.markdown("---")
-st.header("🤖 E-commerce FAQ Chatbot")
+st.header("🤖 FAQ Chatbot")
 
-# Chat memory
 if "chat" not in st.session_state:
     st.session_state.chat = []
 
-def chatbot_api(question: str):
-    """Simulated chatbot API logic"""
-    q = question.lower()
-
-    if "refund" in q and "upi" in q:
-        return "UPI refunds are credited to the same bank account within 3–5 working days."
-    if "refund" in q and "shipping" in q:
-        return "Shipping charges are non-refundable unless the product was damaged or incorrect."
+def chatbot(q):
+    q = q.lower()
+    if "upi" in q and "refund" in q:
+        return "UPI refunds are credited within 3–5 working days."
     if "refund" in q:
-        return "Refunds are processed after pickup as per return policy."
-    if "where is my order" in q or "track" in q:
-        return "You can track your order from My Orders → Track Order."
+        return "Refunds are processed after pickup as per policy."
+    if "track" in q or "order" in q:
+        return "Track order from My Orders section."
     if "emi" in q:
-        return "EMI options are available on select credit cards."
-    if "payment" in q:
-        return "We support UPI, credit card, debit card and net banking."
-    if "large appliance" in q:
-        return "Large appliances are delivered with scheduled installation support."
+        return "EMI options are available on select cards."
+    return "Please rephrase your question."
 
-    return "Sorry, I couldn't understand. Please rephrase."
+for m in st.session_state.chat:
+    with st.chat_message(m["role"]):
+        st.markdown(m["content"])
 
-# Display chat
-for msg in st.session_state.chat:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
-
-user_q = st.chat_input("Ask about refund, delivery, payment...")
-
-if user_q:
-    st.session_state.chat.append({"role": "user", "content": user_q})
-
-    bot_reply = chatbot_api(user_q)
-
-    st.session_state.chat.append({"role": "assistant", "content": bot_reply})
-
+q = st.chat_input("Ask your question...")
+if q:
+    st.session_state.chat.append({"role": "user", "content": q})
+    a = chatbot(q)
+    st.session_state.chat.append({"role": "assistant", "content": a})
     with st.chat_message("assistant"):
-        st.markdown(bot_reply)
-
+        st.markdown(a)
