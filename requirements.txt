@@ -1,8 +1,14 @@
 streamlit
 pandas
-requests
-fastapi
-uvicorn
+numpy
 plotly
 scikit-learn
+sentence-transformers
+torch
+requests
+beautifulsoup4
+fpdf
+fastapi
+uvicorn
+huggingface-hub
 
