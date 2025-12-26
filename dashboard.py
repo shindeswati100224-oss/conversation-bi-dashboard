@@ -5,8 +5,8 @@ import plotly.express as px
 
 st.set_page_config(page_title="Conversation BI + Chatbot", layout="wide")
 st.title("📊 E-commerce Customer Support Insights")
+API_BASE_URL = "https://conversation-bi-api.<your-username>.repl.co"
 
-API_BASE_URL = "https://conversation-bi-api.up.railway.app"
 
 
 # ---------------- FETCH SUMMARY ----------------
@@ -69,4 +69,5 @@ if q:
     st.session_state.chat.append({"role": "assistant", "content": a})
     with st.chat_message("assistant"):
         st.markdown(a)
+
 
