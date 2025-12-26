@@ -9,7 +9,8 @@ st.set_page_config(
     layout="wide"
 )
 
-API_BASE_URL = "http://localhost:8000"  
+API_BASE_URL = "https://your-fastapi-app.onrender.com"
+
 # 🔁 Change to deployed FastAPI URL later
 
 # ================= PAGE TITLE ================= #
@@ -116,3 +117,4 @@ if user_q:
 
     with st.chat_message("assistant"):
         st.markdown(bot_reply)
+
