@@ -1,180 +1,118 @@
 import streamlit as st
+import requests
 import pandas as pd
 import plotly.express as px
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-
-# =================================================
-# PAGE CONFIG
-# =================================================
+# ================= CONFIG ================= #
 st.set_page_config(
-    page_title="E-commerce Customer Support Insights",
+    page_title="Conversation BI + Chatbot",
     layout="wide"
 )
 
-st.title("📊 E-commerce Customer Support Insights")
-st.write("Upload conversation data to analyze customer support performance")
+API_BASE_URL = "http://localhost:8000"  
+# 🔁 Change to deployed FastAPI URL later
 
-# =================================================
-# FILE UPLOAD
-# =================================================
-uploaded_file = st.file_uploader(
-    "Upload conversation_bi_ai_output.csv",
-    type=["csv"]
+# ================= PAGE TITLE ================= #
+st.title("📊 E-commerce Customer Support Insights")
+
+# ================= FETCH SUMMARY ================= #
+with st.spinner("Connecting to API..."):
+    try:
+        summary = requests.get(f"{API_BASE_URL}/summary").json()
+    except:
+        st.error("❌ Cannot connect to FastAPI")
+        st.stop()
+
+if summary.get("status") != "success":
+    st.error("⚠️ API Error")
+    st.json(summary)
+    st.stop()
+
+# ================= METRICS ================= #
+st.subheader("📌 Key Metrics")
+
+c1, c2, c3 = st.columns(3)
+c1.metric("Total Conversations", summary["total_rows"])
+c2.metric("Issue Types", len(summary["issue_type_counts"]))
+c3.metric("Sources", len(summary["source_counts"]))
+
+# ================= SENTIMENT ================= #
+sentiment_df = pd.DataFrame(
+    summary["sentiment_counts"].items(),
+    columns=["Sentiment", "Count"]
 )
 
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-    df.columns = df.columns.str.lower()
+fig1 = px.pie(sentiment_df, names="Sentiment", values="Count", title="Sentiment Analysis")
+st.plotly_chart(fig1, use_container_width=True)
 
-    # =================================================
-    # AUTO-DETECT COLUMNS (NO HARD CODING)
-    # =================================================
-    sentiment_col = None
-    category_col = None
+# ================= ISSUE TYPES ================= #
+issue_df = pd.DataFrame(
+    summary["issue_type_counts"].items(),
+    columns=["Issue Type", "Count"]
+)
 
-    for col in df.columns:
-        if "sentiment" in col:
-            sentiment_col = col
-        if "category" in col or "issue" in col:
-            category_col = col
+fig2 = px.bar(issue_df, x="Issue Type", y="Count", title="Customer Issues")
+st.plotly_chart(fig2, use_container_width=True)
 
-    # =================================================
-    # KPIs
-    # =================================================
-    total_conversations = len(df)
+# ================= SOURCE ================= #
+source_df = pd.DataFrame(
+    summary["source_counts"].items(),
+    columns=["Source", "Count"]
+)
 
-    if sentiment_col:
-        negative_count = len(df[df[sentiment_col].astype(str).str.lower() == "negative"])
-        positive_count = len(df[df[sentiment_col].astype(str).str.lower() == "positive"])
-    else:
-        negative_count = 0
-        positive_count = 0
-        st.warning("⚠️ Sentiment column not found in CSV")
+fig3 = px.bar(source_df, x="Source", y="Count", title="Conversation Sources")
+st.plotly_chart(fig3, use_container_width=True)
 
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Total Conversations", total_conversations)
-    col2.metric("Negative Sentiment", negative_count)
-    col3.metric("Positive Sentiment", positive_count)
+# ================= SAMPLE DATA ================= #
+st.subheader("📄 Sample Records")
 
-    st.markdown("---")
+records = requests.get(f"{API_BASE_URL}/data?limit=20").json()
+st.dataframe(pd.DataFrame(records))
 
-    # =================================================
-    # FILTERS
-    # =================================================
-    st.subheader("🔍 Filters")
+# ==================================================
+# 🤖 CHATBOT SECTION (API-BASED)
+# ==================================================
+st.markdown("---")
+st.header("🤖 E-commerce FAQ Chatbot")
 
-    if category_col:
-        category_filter = st.selectbox(
-            "Select Issue Category",
-            ["All"] + sorted(df[category_col].dropna().unique())
-        )
+# Chat memory
+if "chat" not in st.session_state:
+    st.session_state.chat = []
 
-        if category_filter != "All":
-            df = df[df[category_col] == category_filter]
-    else:
-        st.info("ℹ️ Category column not found. Filters disabled.")
+def chatbot_api(question: str):
+    """Simulated chatbot API logic"""
+    q = question.lower()
 
-    # =================================================
-    # CHARTS
-    # =================================================
-    if category_col:
-        st.subheader("📌 Issue Category Distribution")
-        st.plotly_chart(
-            px.bar(df, x=category_col, color=category_col),
-            use_container_width=True
-        )
+    if "refund" in q and "upi" in q:
+        return "UPI refunds are credited to the same bank account within 3–5 working days."
+    if "refund" in q and "shipping" in q:
+        return "Shipping charges are non-refundable unless the product was damaged or incorrect."
+    if "refund" in q:
+        return "Refunds are processed after pickup as per return policy."
+    if "where is my order" in q or "track" in q:
+        return "You can track your order from My Orders → Track Order."
+    if "emi" in q:
+        return "EMI options are available on select credit cards."
+    if "payment" in q:
+        return "We support UPI, credit card, debit card and net banking."
+    if "large appliance" in q:
+        return "Large appliances are delivered with scheduled installation support."
 
-    if sentiment_col:
-        st.subheader("😊 Sentiment Distribution")
-        st.plotly_chart(
-            px.pie(df, names=sentiment_col),
-            use_container_width=True
-        )
+    return "Sorry, I couldn't understand. Please rephrase."
 
-    with st.expander("📄 View Raw Data"):
-        st.dataframe(df)
-
-else:
-    st.info("⬆️ Upload CSV file to view dashboard insights")
-
-import streamlit as st
-import re
-
-st.set_page_config(page_title="E-commerce Support Chatbot", layout="centered")
-
-st.title("🛍️ E-commerce FAQ Chatbot")
-
-# ---------------- FAQ KNOWLEDGE BASE ---------------- #
-FAQS = {
-    "refund_upi": "If you paid using UPI, the refund will be credited back to the same UPI-linked bank account within 3–5 business days.",
-    "refund_card": "For credit/debit card payments, refunds are processed back to the same card within 5–7 business days.",
-    "refund_wallet": "If paid via wallet, the refund will be credited to your wallet balance.",
-    "refund_shipping": "Shipping charges are usually non-refundable unless the product was defective or incorrect.",
-    "refund_general": "Yes, refunds are available as per the return policy after the product is picked up.",
-    "order_tracking": "You can track your order by going to **My Orders → Order Details → Track Order** in your account.",
-    "order_delay": "If your order is delayed, please check the latest delivery date in your order details.",
-    "emi": "Yes, EMI payment options are available on select credit cards during checkout.",
-    "payment_methods": "We support UPI, credit card, debit card, net banking, and wallet payments.",
-    "account_update": "You can update your account details from **My Account → Profile Settings**.",
-    "large_appliance": "Large appliances are delivered by trained professionals with scheduled doorstep delivery and installation.",
-    "default": "Sorry, I couldn't find an exact answer. Please try rephrasing your question."
-}
-
-# ---------------- INTENT DETECTION ---------------- #
-def detect_intent(user_input):
-    text = user_input.lower()
-
-    if "refund" in text:
-        if "upi" in text:
-            return "refund_upi"
-        elif "card" in text or "debit" in text or "credit" in text:
-            return "refund_card"
-        elif "wallet" in text or "bank" in text:
-            return "refund_wallet"
-        elif "shipping" in text:
-            return "refund_shipping"
-        else:
-            return "refund_general"
-
-    if "where is my order" in text or "track" in text:
-        return "order_tracking"
-
-    if "delayed" in text or "late" in text:
-        return "order_delay"
-
-    if "emi" in text:
-        return "emi"
-
-    if "payment" in text or "pay" in text:
-        return "payment_methods"
-
-    if "account" in text or "update" in text:
-        return "account_update"
-
-    if "large appliance" in text or "washing machine" in text or "refrigerator" in text:
-        return "large_appliance"
-
-    return "default"
-
-# ---------------- CHAT UI ---------------- #
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-for msg in st.session_state.messages:
+# Display chat
+for msg in st.session_state.chat:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-user_input = st.chat_input("Ask your question...")
+user_q = st.chat_input("Ask about refund, delivery, payment...")
 
-if user_input:
-    st.session_state.messages.append({"role": "user", "content": user_input})
+if user_q:
+    st.session_state.chat.append({"role": "user", "content": user_q})
 
-    intent = detect_intent(user_input)
-    bot_reply = FAQS.get(intent, FAQS["default"])
+    bot_reply = chatbot_api(user_q)
 
-    st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+    st.session_state.chat.append({"role": "assistant", "content": bot_reply})
 
     with st.chat_message("assistant"):
         st.markdown(bot_reply)
